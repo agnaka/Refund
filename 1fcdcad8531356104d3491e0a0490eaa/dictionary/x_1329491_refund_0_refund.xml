@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="902e821c531356104d3491e0a0490ea2" extends="task" label="Refund" max_length="40" name="x_1329491_refund_0_refund" type="collection">
+        <element label="Approver" max_length="40" name="approver" type="string"/>
+        <element label="Amount" max_length="20" name="amount" type="currency"/>
+        <element display="true" label="Amonut in USD" max_length="40" name="amonut_in_usd" type="currency"/>
+        <element label="Transaction Date" max_length="255" name="transaction_date" type="glide_date"/>
+        <element label="Category" max_length="32" name="category" reference="x_1329491_refund_0_category" type="reference"/>
+        <element label="Requester Name" max_length="40" name="requester_name" type="string"/>
+    </element>
+</database>
