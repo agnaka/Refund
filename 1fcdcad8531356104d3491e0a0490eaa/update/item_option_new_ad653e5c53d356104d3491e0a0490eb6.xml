@@ -56,7 +56,7 @@
         <rec_lookup_price/>
         <rec_price_if_checked>0</rec_price_if_checked>
         <record/>
-        <record_producer_table>x_1329491_refund_0_category</record_producer_table>
+        <record_producer_table>x_1329491_refund_0_refund</record_producer_table>
         <reference/>
         <reference_qual/>
         <reference_qual_condition/>
@@ -79,14 +79,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-20 21:53:55</sys_created_on>
         <sys_id>ad653e5c53d356104d3491e0a0490eb6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Transaction Date</sys_name>
         <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
         <sys_policy/>
         <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
         <sys_update_name>item_option_new_ad653e5c53d356104d3491e0a0490eb6</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-20 22:07:12</sys_updated_on>
+        <sys_updated_on>2025-01-21 19:13:37</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>

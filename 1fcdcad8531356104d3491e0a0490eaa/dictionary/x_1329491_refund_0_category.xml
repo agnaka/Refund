@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="d50f465c531356104d3491e0a0490e66" label="Category" max_length="40" name="x_1329491_refund_0_category" type="collection">
         <element label="Name" max_length="40" name="name" type="string"/>
-        <element display="true" label="Solver Group" max_length="32" name="solver_group" reference="sys_user_group" reference_qual="nameSTARTSWITHrefund^EQ" reference_qual_condition="nameSTARTSWITHrefund^EQ" type="reference"/>
+        <element label="Solver Group" max_length="32" name="solver_group" reference="sys_user_group" reference_qual="nameSTARTSWITHrefun^EQ" reference_qual_condition="nameSTARTSWITHrefun^EQ" type="reference"/>
         <index name="index">
             <element name="solver_group"/>
         </index>
