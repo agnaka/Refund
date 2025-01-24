@@ -2,17 +2,17 @@
     <sys_security_acl_role action="INSERT_OR_UPDATE">
         <sys_class_name>sys_security_acl_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-22 18:41:12</sys_created_on>
-        <sys_id>54eb944d53931a104d3491e0a0490e9e</sys_id>
+        <sys_created_on>2025-01-23 02:51:54</sys_created_on>
+        <sys_id>317cc201531f1a104d3491e0a0490e1b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_1329491_refund_0_category.x_1329491_raas.moderator</sys_name>
+        <sys_name>x_1329491_refund_0_category.x_1329491_refund_0.resolvedor</sys_name>
         <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
         <sys_policy/>
         <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
         <sys_security_acl display_value="x_1329491_refund_0_category">960f865c531356104d3491e0a0490ed8</sys_security_acl>
-        <sys_update_name>sys_security_acl_role_54eb944d53931a104d3491e0a0490e9e</sys_update_name>
+        <sys_update_name>sys_security_acl_role_317cc201531f1a104d3491e0a0490e1b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-22 18:41:12</sys_updated_on>
-        <sys_user_role display_value="x_1329491_raas.moderator" name="x_1329491_raas.moderator">9a26f5ea533a12104d3491e0a0490e7a</sys_user_role>
+        <sys_updated_on>2025-01-23 02:51:54</sys_updated_on>
+        <sys_user_role display_value="x_1329491_refund_0.resolvedor" name="x_1329491_refund_0.resolvedor">27cdcad8531356104d3491e0a0490ee4</sys_user_role>
     </sys_security_acl_role>
 </record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_visualization">
+    <par_visualization action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <certified>false</certified>
+        <description/>
+        <macroponent display_value="List - Simple">2b1c080881e05dc63b917044290b233f</macroponent>
+        <name>Requests no Completed</name>
+        <properties>{"columns":"number,category,opened_by,state,assignment_group,sys_updated_on","fixedQuery":"","hideColumnFiltering":false,"hideColumnGrouping":false,"hideColumnReorder":false,"hideColumnResizing":false,"hideColumnSorting":false,"hideDotwalk":false,"hideEmptyStateImage":false,"hideHeader":false,"hideHighlightContent":false,"hideHighlightedValues":false,"hideInlineEditing":false,"hideLastRefreshedText":true,"hideLinks":false,"hidePersonalization":true,"hideRefreshButton":false,"hideRowSelector":false,"hideTitle":false,"hideTitleRowCount":false,"hideViewAll":false,"highlightContent":{"color":"","patterns":[]},"highlightedValueConfigId":"","limit":20,"listTitle":"Requests no Completed","maxCharLimit":4000,"maxColumns":6.0,"overrideWordWrapUserPref":false,"refreshRequested":"","table":"x_1329491_refund_0_refund","wordWrap":false}</properties>
+        <requested_by/>
+        <scheduled_count/>
+        <sys_class_name>par_visualization</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 12:37:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>46e857556e7da625ce755283f7961062</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Requests no Completed</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name>par_visualization_46e857556e7da625ce755283f7961062</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 13:07:24</sys_updated_on>
+        <type>List - Simple</type>
+    </par_visualization>
+</record_update>

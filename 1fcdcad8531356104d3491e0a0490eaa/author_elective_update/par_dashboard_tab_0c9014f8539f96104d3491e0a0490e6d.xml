@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_tab">
+    <par_dashboard_tab action="DELETE">
+        <active>true</active>
+        <background_color/>
+        <dashboard display_value="Refund">c49050b8539f96104d3491e0a0490e0b</dashboard>
+        <name>New Tab 2</name>
+        <order>0</order>
+        <sys_class_name>par_dashboard_tab</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 23:10:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0c9014f8539f96104d3491e0a0490e6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Tab 2</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name>par_dashboard_tab_0c9014f8539f96104d3491e0a0490e6d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 23:10:42</sys_updated_on>
+    </par_dashboard_tab>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</application>
+        <file_path/>
+        <instance_id>c2f13af1db014a5437d72a59139619f8</instance_id>
+        <instance_name>dev247250</instance_name>
+        <name>par_dashboard_tab_0c9014f8539f96104d3491e0a0490e6d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_tab"><par_dashboard_tab action="INSERT_OR_UPDATE"><active>true</active><background_color/><dashboard display_value="Refund">c49050b8539f96104d3491e0a0490e0b</dashboard><name>New Tab 2</name><order>0</order><sys_class_name>par_dashboard_tab</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-21 23:10:42</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0c9014f8539f96104d3491e0a0490e6d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>New Tab 2</sys_name><sys_overrides/><sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package><sys_policy/><sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope><sys_update_name>par_dashboard_tab_0c9014f8539f96104d3491e0a0490e6d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-21 23:10:42</sys_updated_on></par_dashboard_tab></record_update>]]></payload>
+        <payload_hash>-953976953</payload_hash>
+        <record_name>New Tab 2</record_name>
+        <reverted_from/>
+        <source>bbdd4068539b56104d3491e0a0490ecb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 23:10:42</sys_created_on>
+        <sys_id>c89014f8539f96104d3491e0a0490e6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1948b21e8fb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 23:10:42</sys_updated_on>
+        <type>PAR Dashboard Tab</type>
+        <update_guid>cc9014f8579f9610435ea9f79949b36e</update_guid>
+        <update_guid_history>cc9014f8579f9610435ea9f79949b36e:-953976953</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="New Tab 2">a54e551d53db5a104d3491e0a0490e59</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 18:07:11</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_tab">par_dashboard_tab</sys_db_object>
+        <sys_id>4483b615ec9e46bc806bb8cb0161de49</sys_id>
+        <sys_metadata>0c9014f8539f96104d3491e0a0490e6d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>New Tab 2</sys_name>
+        <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_scope_delete display_value="">23feb7802b514b309097806d58664c90</sys_scope_delete>
+        <sys_update_name>par_dashboard_tab_0c9014f8539f96104d3491e0a0490e6d</sys_update_name>
+        <sys_update_version display_value="par_dashboard_tab_0c9014f8539f96104d3491e0a0490e6d">c89014f8539f96104d3491e0a0490e6f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 18:07:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

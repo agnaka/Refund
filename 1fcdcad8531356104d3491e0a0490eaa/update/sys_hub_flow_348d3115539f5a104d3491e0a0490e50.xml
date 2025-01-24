@@ -1,0 +1,2852 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=21937000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>freecurrency_integration</internal_name>
+        <label_cache>[{"name":"960148e9-8435-412e-8eec-112b5bb90b4a.__action_status__.message","label":"6 - Integration Freecurrency Api➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"5ae30e5a-1515-4506-87ec-a3fbef4b5401":["log_message"]},"attributes":{}},{"name":"960148e9-8435-412e-8eec-112b5bb90b4a.__action_status__.code","label":"6 - Integration Freecurrency Api➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"f288fd47-2a66-4bff-86c0-d40596a8c198":["condition"],"5ae30e5a-1515-4506-87ec-a3fbef4b5401":["log_message"],"5c3f911a-bb61-45d1-8a2e-f1e843db9583":["condition"]},"attributes":{}},{"name":"960148e9-8435-412e-8eec-112b5bb90b4a.__action_status__","label":"6 - Integration Freecurrency Api➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{},"attributes":{"uiTypeLabel":"Object","co_type_name":"FD4bf80b917c179a10f3eeb3d74c235a38","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"bde741b1-4c06-4fc8-bc7c-bc6714f3510c"}},{"name":"flow_variable.retry_timeout","label":"Flow Variables➛Retry Timeout","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"095c74bf-93a8-4717-8660-5ac429c7893d":["seconds"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4edb401d-fcae-4639-88b5-b76d65372a0c"}},{"name":"960148e9-8435-412e-8eec-112b5bb90b4a.convertion.data.USD","label":"6 - Integration Freecurrency Api➛Convertion➛data➛USD","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"06511e93-67d3-4098-aa23-f504c83e9976":["amonut_in_usd"]},"attributes":{}},{"name":"flow_variable.active","label":"Flow Variables➛Active","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"b13699b9-3789-4d5f-9aaa-de3e8ae2d8e6":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b303b516-707b-4a4f-ab09-c6bc1713360d"}},{"name":"flow_variable.current_try","label":"Flow Variables➛Current Try","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"a1492aa7-577a-406f-8d53-d57df090a6b1":["condition"],"440795f3-96b7-4903-b81a-ebbfa9975a3a":["condition"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a81a34bc-52fa-4aeb-83f4-941725aeceae"}},{"name":"flow_variable.retry_count","label":"Flow Variables➛Retry Count","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"a1492aa7-577a-406f-8d53-d57df090a6b1":["condition"],"440795f3-96b7-4903-b81a-ebbfa9975a3a":["condition"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"56880f03-c867-4472-adb8-adec751aa77b"}},{"name":"095c74bf-93a8-4717-8660-5ac429c7893d.duration","label":"10 - Convert Seconds into Duration➛Duration","reference_display":"Duration","type":"glide_duration","base_type":"glide_duration","usedInstances":{"e5a3b0b0-08f9-49b3-9d48-c58f09cbe257":["conditions"],"dc4d7859-9314-43c9-a4a3-72364b40097f":["timer_duration"]},"attributes":{"uiType":"glide_duration","uiTypeLabel":"Duration","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3a9f88d8-46cd-4950-9bd6-ddaaaeb17131"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Refund Record","reference":"x_1329491_refund_0_refund","reference_display":"Refund","type":"reference","base_type":"reference","usedInstances":{"e5a3b0b0-08f9-49b3-9d48-c58f09cbe257":["record"],"06511e93-67d3-4098-aa23-f504c83e9976":["record"],"915963ae-0e27-494a-8450-87bd1fd15bdf":["record"],"175215ad-476f-4f1d-a192-b55335dfe89c":["record"]},"attributes":{}},{"name":"flow_variable.integration_success","label":"Flow Variables➛Integration Success","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","usedInstances":{"440795f3-96b7-4903-b81a-ebbfa9975a3a":["condition"],"87521bca-8973-400d-ace1-43d745024ae4":["condition"]},"attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a19a1ec4-c1d2-4b3d-9856-fa90b1a7c921"}},{"name":"flow_variable.integration_error_message","label":"Flow Variables➛Integration Error Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"175215ad-476f-4f1d-a192-b55335dfe89c":["integration_error_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2c7739a6-3e08-4d23-8b81-9c67c7e0d7c7"}}]</label_cache>
+        <master_snapshot>3b55ea1553539a104d3491e0a0490e35</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Freecurrency Integration</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>5065ea1553539a104d3491e0a0490efc</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:23:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>348d3115539f5a104d3491e0a0490e50</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_name>Freecurrency Integration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name>sys_hub_flow_348d3115539f5a104d3491e0a0490e50</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:23</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=348d3115539f5a104d3491e0a0490e50"/>
+    <sys_variable_value action="delete_multiple" query="document_key=348d3115539f5a104d3491e0a0490e50"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1329491_refund_0_refund">stateIN1,2,8^amountISNOTEMPTY^amountVALCHANGES<item display_value="1,2,8" endquery="false" field="state" goto="false" newquery="false" operator="IN" or="false" value="1,2,8"/>
+            <item endquery="false" field="amount" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="amount" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5065ea1553539a104d3491e0a0490efc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 23:17:51</sys_updated_on>
+        <table>x_1329491_refund_0_refund</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>348d3115539f5a104d3491e0a0490e50</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 02:29:23</sys_created_on>
+        <sys_id>7d319b5d53179a104d3491e0a0490edb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:23</sys_updated_on>
+        <trigger display_value="">5065ea1553539a104d3491e0a0490efc</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=348d3115539f5a104d3491e0a0490e50^sys_idNOT IN7d319b5d53179a104d3491e0a0490edb"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=348d3115539f5a104d3491e0a0490e50"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=348d3115539f5a104d3491e0a0490e50^sys_idNOT INf88d3115539f5a104d3491e0a0490e52"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>348d3115539f5a104d3491e0a0490e50</id>
+        <name>Freecurrency Integration</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:23:41</sys_created_on>
+        <sys_id>f88d3115539f5a104d3491e0a0490e52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 20:23:41</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f88d3115539f5a104d3491e0a0490e52"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=348d3115539f5a104d3491e0a0490e50^sys_idNOT IN09a18655539f5a104d3491e0a0490e49,45a1ce19539f5a104d3491e0a0490eba,cda18655539f5a104d3491e0a0490e44"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">5b965bacdcd212104f34465061b06a9b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</model>
+        <model_id>348d3115539f5a104d3491e0a0490e50</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_348d3115539f5a104d3491e0a0490e50</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:41:43</sys_created_on>
+        <sys_id>09a18655539f5a104d3491e0a0490e49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 20:41:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=09a18655539f5a104d3491e0a0490e49"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</model>
+        <model_id>348d3115539f5a104d3491e0a0490e50</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_348d3115539f5a104d3491e0a0490e50</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:41:43</sys_created_on>
+        <sys_id>45a1ce19539f5a104d3491e0a0490eba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 20:41:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=45a1ce19539f5a104d3491e0a0490eba"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</model>
+        <model_id>348d3115539f5a104d3491e0a0490e50</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_348d3115539f5a104d3491e0a0490e50</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:41:42</sys_created_on>
+        <sys_id>cda18655539f5a104d3491e0a0490e44</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 20:41:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cda18655539f5a104d3491e0a0490e44"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=348d3115539f5a104d3491e0a0490e50"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=348d3115539f5a104d3491e0a0490e50"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=348d3115539f5a104d3491e0a0490e50^sys_idNOT IN89a1ce19539f5a104d3491e0a0490ee7"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:41:43</sys_created_on>
+        <sys_id>89a1ce19539f5a104d3491e0a0490ee7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 20:44:05</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9Va227jNhD9FUFPLeAWuthWnD6lidM1kMvC9m5RBKlAUZRNVKa8EqXEXeTfO5QoW9bF8UVpsnlILJLinBmeOUOaefiu+sghvnquTpHjE7WjUsZJyJA/XS0JNHPRbDO0EH0LxFzEg3ClnvMwJh01CF0Squd6R02QH5PJKhq58BIMTd+Qr6uyG56fbd00Bt2BbofEi5lra/IDjHFptPTR6qscOs7b8Zz6bkiYev7w2FGXKISpuTD7vdRFhW3s6UQfnGnYNOBH04yzru70TUc3XBMRpMGEZZdLWHmN5xtHyTMnzCVgykN+RGqCEhLk3jN/VRjxHNF/Yc4zTfR6BBBjksVp/WhL97NmPA8oJvdLTgOWtWToss7AjxfsLkMtAkc8FPs8Dxy0xBHMR5YCKONrHN5kHjyNc4PXlKU+yU4/wMhfPyHOQ+rEnEQizB71IeB2FpEoiMMU/Xh4eT++sv+8mF5+Go7t8XAyHY8up8Mr9SX1y/4WixkzhBKLnbnzsl7ta0p8sWxO6MO4CId0yS8wpwmRWF46G45eBsylaUgqPMV5V7TNU+lPvn6a1khVXJg8p2vEESejO71jdM7+RosgZnw0ubufDm8/T/+SDV8vbi4/Xdz9MZwczFVLs1xXb+IqdgpcLbpeA5jXRKHo8y7WypZm2nY17Z2ImyXU0bxdBC7xrzbTqdA5mwGTKVvGXMQoj4sdLEko4gHvqZsV/U3+vR7f3+afp/fw3hNiPLJ5YCPXtQtRFybAl9cSIItJNQteT4EwZjCFvV7PaiKkC7BeiRsageMPkMN5lNMpod+7kVOOY6YEsPDwS8FxCEHmSq6F3miBZnJtvAnxCeYFEnlfouLTLY0iymYF1GujaVQqNtfmgIxK7lJmOzrR+OORKlCNb1KKW6lMHZz0Ou4amun0NUukvA4fPV2ztB7yXFPTnLNC0lfBNKLkpdVvMfkPS/0oZZu/B7fKgZWQtSLd9+JJsk2y3HXBAakwl+1A01uCZghoJaU0D5LKNRmz5qvS1mmHay1vDZCbIHjD3Vf5xIA9JM7zgydQ6SPkzUH4n1kYZFvHLb0RcyqUKZsRyk8yfj+3KHVeEJLdALZHvJPIbSKccxSxVQvyZpg6sfrdvgaqZgpB6w0GDkaG51l9i+h6Sd42MGqxfWBZe4VOSR0fmySulhlJHaEOELcTAFaE7mCAp0ucpGOtwGV9P4aUPc0JswFqaPtCrCqKNvOpS/K+o9O5YiXZJPCpKY2dgdvrWRa24IgCKe11iYP0rtFDA6tvEq+U0hUou2DymiC84cElWkWp+YZ0/5J1fazT91vyMiKci4JyeJ1lsP9M30GZkUKtE4uhpKoRhMpdwH4ZbcYpEwIlLD2ztlVw90EhFlZ5WxhOwOeVig+mf4f2LdNip9gQlfc89ZT4kGy7daqGIMNAA91s0BCrX6chGzDNMD/oBmHPFEgak6lup7Avo5PaxGgs7UdwtESOYs3fsSlpKyh660Ex3i4o5skboTwDG496x4D9gWpUul04pVAJm8QOvKI6XwUKdChgRKGeIr8XhJO7s1L4nEBIfdjxgkFFWD9VlotlogplzeD/F0i2h66UK2hW5A7pXStRadXbPaQS18QDt6kada3GHW1zSSp1f9C6dDDtk7os2lmcDpu3PGdteSpwcpsHexaeVr2urz6neV1bf17z+vTKsuuIXYPi49cMAXqaLcMRlSJguHSCwG3egcSMfouJjeeIzbL7jdzQNcSZIDxXsiFKNqRNrfef0CpSy0UHSCvyQn5FDA2QISzTr7Ysk4SEq4qvolGJlyB6p3q5q84YO+pMfhMY8RBAzFaFJMshH/i9pzOAROpp2NR1s3KX2yve5W6ztBlQQw0xjq0hc5peghbMy5XgdEFSxVrfZCoLxPGcRB0Fliu9SkgFjYYRT0f/qrZ4VMLFKxeZhHUlpjFNkqYMa5TsHcxPyjlTp9E1LC7Tp6jSOw9FO9zXW3HfaMN98zj3uycXKRmR+iolo9duZTri31fU+tL0+B9+nFf5YSUAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=348d3115539f5a104d3491e0a0490e50^sys_idNOT IN07e58f5d53d39a104d3491e0a0490e08,2e35e61553539a104d3491e0a0490e50,6e2ac6d153df5a104d3491e0a0490e06,a62ac6d153df5a104d3491e0a0490e0a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</flow>
+        <generation_source/>
+        <order>16</order>
+        <parent_ui_id>87521bca-8973-400d-ace1-43d745024ae4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 01:40:02</sys_created_on>
+        <sys_id>07e58f5d53d39a104d3491e0a0490e08</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:32:43</sys_updated_on>
+        <ui_id>175215ad-476f-4f1d-a192-b55335dfe89c</ui_id>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K5GfoyghFBXeJhBSpa6V6NaXrrVMfAOWnI/ZDoUh/vuuEwci6DoqdQ9oeYrvh33O8T3J05YITkakDzyMhtEgiaM47oVh77ofzQfxPOrxmAFExCc5ywArFSSF4rheMVnZwHY7VsAMcK9Q3veS21caBUmlFORmt8NSLnQp2ebRdWAkWQrJMU9GT88+KZnCzQ0oMtoepc5FJ9kcJJbOWnjHcM2mtGteJFWGuKhog7euc+Iy3s0EM9hk4UShT2BtIOeAQFImNfgkYzmyLNSGjIyqMID8+X0uN/uKpchNQzRjay1+4cn90NalgMwSJ8J+SZ1ATTidMMMecOfEVGqvVyES0I0mHFJWSTPuxpqC+9KIIm9aDJvLtruQVZbfNYqQ/Qad+6g0goDS8rTIG1rpw7J4nbUgpyKvJXEUZZEwuV8xY5SYV8bC2RKQUGucsbIU+YKWqliJuhmhZMFC4iJIZfGKZ2qxyAOWWNwBqsqCKcYndfiRKWFJfMVtsHnnE73RY8m0PlBBDenPyiJpiDkKtFahloDWk2CbEyVK8wWPWoEDvvPd/M+v3puwZHgYqM6eBw+saRT3hv1hRBFPlXMaupfT4Z+18Y9Z4AyArQW+1Rf/NmDngpPYbbfXu2sSzgNXn+aB60vygKNx8Sb42+iHvXc/rp1Jqqddd8YebxgWilnYVBv88P+owjDmN4ewN2VC4g2+dEtBqULRDLRmiz+3nFrnXx/3MUeeoVvryKkAyfUbQrZ2hAx5GqCNsEeWdEnv0SX3v6ZP82U0COvngtz53/yhnn8DJvhuGaMJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>dabeea18-114d-479d-9038-de6b7cb1ba61</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:11</sys_created_on>
+        <sys_id>2e35e61553539a104d3491e0a0490e50</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:32:43</sys_updated_on>
+        <ui_id>06511e93-67d3-4098-aa23-f504c83e9976</ui_id>
+        <values>H4sIAAAAAAAA/+VWXWvbMBT9K8ZP60iMvxKS7Gk0BAZdC+3al7YI2bpOBbLsyXIaL+S/78qWk6wN/YC+lOUpul8+5/oc27cblzN35sbA/GAajNMoiKLQ98NJHCTjKAlCFlGAwB24kuaAlQrSQjE8r6ioTWCzOVVANTCnUM51ycxfEnhprRRIvd1iKeNVKWhzYzswkj5wwTDvzm7vB25JFQ7XoNzZ5knqregETUBg6WUP7ylc3ZTmzIq0zhEX4X3wzHbObcb5MccMNhk4gT9wYa1BMkAgGRUVDNycSmRZqMadaVVjAPmzCymaXcUDl7ojmtN1xf/glWPf1GWAzFK7hN2R2AV14WxONb3Cyamu1W5fBU+h6nbCIKO10KeHsa7gotS8kF2LponouwtR5/K824i7G3BwP+oKQUBpeBrkHa3s6qF4vOxBLrhsV2IpiiKlYneiWiue1NrA2bggoN1xTsuSyyUpVbHibTNCyb2lwIOXieIRr1nxpfRoanB7uFXqLTA+b8M3VHFD4ieOwebtwK2a6lTQqtpTwR2S37VB0hGzFEi7hXYFpFWCaU4VL/V3vNQKLPDtwOo/Gb2ksHS6F9TBzL0H1iSIwmk8DQjiqSUjvv3zXPyXffx9FngDwN4Cv9obfxywdcGz2Nlhr3PeJawHRh/mgcln8oCl8elN8Jr0/fDFh+uBklq1Vweyp3kha3yUSlJX7K72/YhlbNhdDI5o/9X693niDch7Tyw4CFYdodIbAnIEqoF01J6YwiadG5vcvRw+zBnB2G9/n8gf/8E7oqPYxQzmf/RrAi+Vo8aUg3VOJ3QH1VwBAqf6S8ZIS4OMCQ7TsFTUcCOZAui+m9KG0JJ7aSFXoPa8r6/mJ9/upJlc0qaf3I/D9S6XoPpPLw/h1lLbegUV3s49mMb5atBh1rmTClBG0tZ4uljwNbAv4Qmuq6IrYL0K/M1mOvaDeALT4SSORsM4CGE4QdTDIAiTUZJM/SSmx3Djh+B2u73/C5a5y+9xCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integration Freecurrency Api">6c7386d9539f5a104d3491e0a0490e04</action_type>
+        <action_type_parent display_value="Integration Freecurrency Api">e6e13015531b5a104d3491e0a0490e3a</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>6c7386d9539f5a104d3491e0a0490e04</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>440795f3-96b7-4903-b81a-ebbfa9975a3a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 21:18:57</sys_created_on>
+        <sys_id>6e2ac6d153df5a104d3491e0a0490e06</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:32:43</sys_updated_on>
+        <ui_id>960148e9-8435-412e-8eec-112b5bb90b4a</ui_id>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Convert Seconds into Duration">7fb50a785303d2104d3491e0a0490ea5</action_type>
+        <action_type_parent display_value="Convert Seconds into Duration">89e9fdb053cf92104d3491e0a0490e5c</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>7fb50a785303d2104d3491e0a0490ea5</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>a1492aa7-577a-406f-8d53-d57df090a6b1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 21:18:57</sys_created_on>
+        <sys_id>a62ac6d153df5a104d3491e0a0490e0a</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:32:43</sys_updated_on>
+        <ui_id>095c74bf-93a8-4717-8660-5ac429c7893d</ui_id>
+        <values>H4sIAAAAAAAA/41Sy27bMBD8F55lQbakOvatSBAgQNsAdZtLEAgrcWUToEiFDyeq4X/v0mTUILn0yOHs7szsPp6Y4GzL1m1bF7C+qsui5KtlUfGy2iyxgKLaFAhXLGMKBiSmxU4rbgk4gvQBOZ16qV+aIxgBrcTcoDNT48SA2rvzmZhc2FHC9JAKCOkOQnKDim0fnzI2gqHmDg3bnj58/a86CS1Kou5meZ/0umkMgFAO9zQqAt9S3d2MasODkGXG8NWh4kgKepAWMzaA4uC0mdjWGU+AQeD3Sk4z40Ddo8MBXq34QwOrIvB6JEtdcj8/m5RMhPsbcLCjzp3zZg5Kiw5tDINjD1666/dYJNyPTmgVS1zYQqrW0g/qR0yCzQ3eLcJbEoFj8BmUJxv97qBffr6pvBXqEkn6lLoDOb/AOSNa74KeE/Pi18eUI/Q5Z5Q40MxmgHEUat+MRh/FZQ7JHvK9pEd+uSyOVuxVDl3wmNMGIL8l/OYCP6Sz+05t0rzfSjx7vAuXU9fVl7qucVHjqltU0FeLzbqERd93dclhg7hesXPG7GSvJVj7LyraUfPsg9EYXIqoiSmHks6I0X0lUUdMaZyf/gLyxpWkUAMAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=348d3115539f5a104d3491e0a0490e50"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=348d3115539f5a104d3491e0a0490e50^sys_idNOT IN2e2ac6d153df5a104d3491e0a0490e08,510c225d53539a104d3491e0a0490ebc,5c53629153539a104d3491e0a0490e40,662ac6d153df5a104d3491e0a0490e0b,67130e99539f5a104d3491e0a0490e96,84328a59539f5a104d3491e0a0490e8f,c8328a59539f5a104d3491e0a0490e90,d5a10259539f5a104d3491e0a0490e09,d872ee1153539a104d3491e0a0490ec1,dc72ee1153539a104d3491e0a0490ec2,ea2ac6d153df5a104d3491e0a0490e09"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ee2ac6d153df5a104d3491e0a0490e07</block>
+        <comment>Set integration success to "false" and +1 on retry count</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</flow>
+        <flow_variables_assigned>current_try,integration_success</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>5c3f911a-bb61-45d1-8a2e-f1e843db9583</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 21:18:57</sys_created_on>
+        <sys_id>2e2ac6d153df5a104d3491e0a0490e08</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:18</sys_updated_on>
+        <ui_id>ef161ce1-1492-4bff-be15-b71fa81c6b92</ui_id>
+        <values>H4sIAAAAAAAA/+1XXWvbMBT9K8GvizM7tte4eyorhcC2wpr1ZRRzLV2nYrLkynLarOS/78ofSfqxPhRWKORNOpLuPfdIxxffe7qxVWPrhT6pa7FU3vGvq7EnlMNofO8pKNE79lhjDCqbWbP2xt4KZONQGnJRVxLWlzuEXQvJaXMXqgJDESwa7/j+0ZJdV5hJyFHSwbmyuKRdlJzTNEwhDKZJmkRpkdAw5lGchhhAEKcBBlPaN5z80lEbLVpqz/J1mQgU2xzacMcoGHt4Z1FxpJwFyBrHXgmKg9V0bkAMAj9XcgdcU6Cu1hLuavGHYseB21cgJWW9Dttp1ms0yKMFw/PKCq06xEIuB+20bEr1vavBqYsFNNLuqdvUFA8rx9mR6BkVF9f69seQ8Eyotrx+UWoGcjsDa43IG4u1u5FGLB5r00Ffn9wLSiydpCVUlVDLrDJ6Jdo8RLucLCVNJoXUt8TPPaUJMFfjhNSEyRnhpy18CUa4gr9RmD7fTyVuGpy7e4dZCFGcMz+ZFuDHgLk/i4rYT+PwaJoAMgT0Nq242U3jyupk6gXJOk1pQ82MqOwJUVhRedY0OGDtQ9x7HjR9aTOlso1Ro4JnbSVthSswk70Yow+j8LO32WzGW8O0ehpwCmR1wxjW9Z5xgqfOaa/n1fZZEOePZ32I1kE85Ecp8jCJwih94qBk30HzHdfRxZbri4X0jsq1lgjq/TpqUL2HT5+/k/9lup18D0334Dbfxnfug4ss9lnIp36cR9xPZ8knv4A0yEM4Yuk0fIXv2vI3V+7hd9m7ptI+0H99rA/N5dBcDs3l+ebyyDiHJvMunHVoMm/TZDgyUROrhaMwH/5h3MKa3plg+9CtNr9dPTts8xcip98GDQ0AAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">150c225d53539a104d3491e0a0490ebb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:46:52</sys_created_on>
+        <sys_id>510c225d53539a104d3491e0a0490ebc</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:18</sys_updated_on>
+        <ui_id>87521bca-8973-400d-ace1-43d745024ae4</ui_id>
+        <values>H4sIAAAAAAAA/+2UW2vbQBCF/0rQsxC6RKbxW0gxBNoGmpCXNojR7sheutpV92LHNf7vndXFNo3TltDHvnnP7M6cM/rwLtLedd7ZB31trViqaP7lKY6EChr93kUKWozmEdOKCye0qnohjtYgfSjcKodLA6F0sQAhvQlVLmwnYfv420tsJSQ3OM7swFBnhyaa734puW2HlYQaJfW6d0aoJT0XnE5NCk12xTJW5LMiT9P83WVWz4o6y3kBCAXdmx7eTBEuPvRK/Gq2MI90O03ShgdbWRpH+OxQcaTRDUiLcdSC4uC02R4Ug8DvlDwKK6EctYvC5WcrflDvvCzDxQYpI8OheDhW4/YGma20YHjXBYOD4qCW4xumpW/VpyFH2Ds24KWb9k6Kt9QPu2A6uBgtNfcrvfk8DVwI1Qcci1IzkIcTOFpD7R3a8GFQYkuNqha6jpZTdUavRf+YvLTJUtIhaaTe0NDAUwIsGE9oR5AsSH/fy49gREjxkdrQ48FmDVawqmeP2jlDEfb9WqrvPhgaAo5RqmEbdMEyIzp3TXPWOLrexy/BPWF2t+sdrkcTiTjiWVnPGFq733/1aVrwvt1LoN/Q4V/QfgVlU2ZpeZ72y9k52s9w/jri+R8QDx/lLwlP0/Q/4qeIC1sNqI7ZBjDeSvhTwHmYYAduODJhychD0G6nf/BQ2BIAgp1KG22+hQhHbf8T7nxsSwsGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5453629153539a104d3491e0a0490e40</block>
+        <comment/>
+        <connected_to>5c3f911a-bb61-45d1-8a2e-f1e843db9583</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>440795f3-96b7-4903-b81a-ebbfa9975a3a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:08:51</sys_created_on>
+        <sys_id>5c53629153539a104d3491e0a0490e40</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:18</sys_updated_on>
+        <ui_id>dabeea18-114d-479d-9038-de6b7cb1ba61</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6e2ac6d153df5a104d3491e0a0490e0a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id>a1492aa7-577a-406f-8d53-d57df090a6b1</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 21:18:57</sys_created_on>
+        <sys_id>662ac6d153df5a104d3491e0a0490e0b</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:18</sys_updated_on>
+        <ui_id>dc4d7859-9314-43c9-a4a3-72364b40097f</ui_id>
+        <values>H4sIAAAAAAAA/+1YS3PbOAz+KxqdHa+op+1bp2lneuh2p/Hk0uloKBKyOaUlLUUl9Xr835eUKFmxZefl9H1KBFDAB+IDBHhj55UsKlnO81dlyRaZPfv0eWSzTMvU/xs7wyuwZzatBJYsz2K5LsAe2TeYV1oOXwvOCJNxe0DpKCsLjtfX5sgbc8TqHSFLxqkA467AQnmRIOzZZk+l3cUcJ8CVpdfLnBHtnVH15E8jL5ggP/IcD3mOk4QIwtCPwiQNcTQJ1Ln2xUvj2Zo36I8EVf+ZKQTGTS6oxoQcZ6QClZBRUI5TzEsY2SucUSxzse4kAjD9kPGdYMkyqezZ+vDXkv2njPuOPpeCCpBAo+seY3NxjbhB0SShjWPoKk9lwgTgbEc7Gx+BK/UNDNkQRjdgA/Vt/AOCQCbxYtBK0WkH7LhblVUKKa64fH2+ENEZQnTPFKKnQ2zS96GoVTPb0/TCCTc5JzmvVtnfDQ3t7kKuT1VVc+Ty/uKqSoUKCk1XzT9DxvRqmd9+bLn2lmU1VqPkOcG8e8JSCpZUUqdmYwOHlTIUr3BRsGwRFyK/YfXLKozVeMHVwzjl+a1yqlvIGBMNZKyqA4/fKvllLb7GgukLeK/MqJe3NfHjfyvtt7kCgziuL0wfKIlghXxFdL4MOJ0iU729HEi2AhHXXStWbkE/97J12JOe3IIulfW/5o35ugslKaIhClESeaGrupDnk5BAOAVACE9dp9eFepSqAVs1YEsDtgziB4dmWlV9+bU8NooX6Fm1rcc0rY71jyL9z8JclfgybqhpYqudn4HRTa53yX8ZCr/LJCyaODSBJ47nec6UBF7UEZhSgDSNEuQCGiTwjqoDmA03WefnDyd/dk4OfAI3G2cakMhP0ouphycXfoSii0kYOhcBJr47JdFk6tFx++Z2e0hhx7oCkme0fHo73uGqyQwp8gNybCZMYGAm3KdyL9S7TfZwXviOc+EfOj+HzgdDYJwrtzprPYLjVNZQ9kjbis+xwlCCfeQER+jqhj26zuuJQexPtlYP+MNDPLLoeD/MotNe8n4uhhaaBNJc9L+VnaDbDU6vHPc4Q49y5j57+O94Nzjwt9q9Opai+hHLuEVI1vGpBax3zFBzR7r7av7uEv/kBvCN1waUugE9WvmRd6LyD9eFB8R0377g/wLfsmfWwPAnZ/Tb1UZJlkAr/kKV0GWmrYQ0CQI1tB2phNC9O7KpBFhyCVaac3Wz+qkH91gY5t5Ez7WhfXBG2nvuXdqTVdYHMVQCVzv17zDWPXV8+6yZ2FgqG0pRIKxUDuda9q79tVor1ooEjPRFt7n4oqHuZNv/AWyh5Br3FgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6f130e99539f5a104d3491e0a0490e95</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:48:10</sys_created_on>
+        <sys_id>67130e99539f5a104d3491e0a0490e96</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:18</sys_updated_on>
+        <ui_id>440795f3-96b7-4903-b81a-ebbfa9975a3a</ui_id>
+        <values>H4sIAAAAAAAA/+1VTWvbQBD9K0VnIWSrjoNvoSVQaBPahFzaVKx2R/bS1a66H3ZUof/eGX3YxolpKYVe6pP2zc7Me7PzcBuZ4Ovg3b25ck6udbT6/BhHUhOG322kWQXRKuJGC+ml0XkPxNGWqUAB/BTS1Yo1DweEb6QSFsZqNbOY48FGq/Yk5JsacsUKUJh4563Ua0yXAk+FYHNepK+XWZrNsjS9mM35fJmV+Ltgy0WK96bENxO5V+97JD7Lmvoh7qZOxgqiNUvTOIInD1oA9i6ZchBHFdOCeWObPWKBiVutDsBGaj9IrtiTkz+w+HyxoIsloEg+zmN/zMdZTWMyksNtTQwHxLNCTTM0KlT6ZhBCU4aSBeWPphwc1oOaSBOLkVJ5tzG7T1PDa6l7hWNQGc7U/sQ8zqEIHhy9DCiosFBesbrG6eS1NVvZJyOXKlkrPCSlMjtsSquSME7EE5wRS64Rf9vDD8xKUvEBy2By16vPvwfqO+gYGeeDaLzguJW1v8JyWxjJdfHz1TvaurbtiWzHXgk+A6wt65/aBc7Bua77EtI0E94G+Hrz8TSDB2uJhLfNeBNOr1jAYM5N0L7rnu/5P+HwN5wllrPssjznrEv+krNe8NR5O81/ZSeax2+6KaVa/+002Qmf0OWDX0ZtffM/ttkjeWro4IbFEcClQyL3hL2b/ggo0OAGSH4M7Yz9RhIOWPcTziUKqFIGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c4328a59539f5a104d3491e0a0490e82</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:44:06</sys_created_on>
+        <sys_id>84328a59539f5a104d3491e0a0490e8f</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:18</sys_updated_on>
+        <ui_id>b13699b9-3789-4d5f-9aaa-de3e8ae2d8e6</ui_id>
+        <values>H4sIAAAAAAAA/+2UXWvbMBSG/0rRtTH+aMKam1E2CoVthbX0ZivmWDpOxGTJk+SkWch/35Flp2FNaRm73F30nq/3HD9kx0zvu967O3PpnFxqtvj2kDCpg0a/d0xDi2zBuNFCeml0NQgJW4PqQ+Bae1xaCKEz6c6kBu7lGt9TipCuU7C9fz2Tr6QSFsfpHVia4dGyxe6PkN92WCmoUVHDW2+lXlK5FPRqMmjyC57zspiXRZYV787zel7WeSFKQCgpbyr8MC1z9mlQkhe3DPNId9MkY0WwlWcJw0ePWiCNbkA5TFgLWoA3dntQLIK40epJWEntqR0LyY9O/qLexWwWEhukHTnG4OFZjSeMMl8ZyfGmCwaj4qFWYw03qm/1l7hHOD420Cs/HZ+U3lE/7ILp4GK01NyuzObrNPBK6mHBMagMB3V4gacz1L1HFz4MKmypUdVC19Fxqs6atRyKyUubLhU90kaZDQ0NZKXhcxud0o0gvSL94yDfg5Vhi8/UhoqjzRqc5NVAIbXzllbYD2epfvbBUFxwXKWK16AEx63s/OWA1eh6nzxH+Ije3W5wuB5NpBHJ/f57n2WlGDo8B/ltRf+C6QuYNbM8m51m+nx+iukTNL8McvEKyOH0b+Q4y7L/IB+DLF0VgRx3i2D8LccPAdo4wUVuBHLpyMhd0K6nf+wQ2BIAkh9LG2N/hBWetP1vnWJoVvsFAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c0328a59539f5a104d3491e0a0490e90</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>b13699b9-3789-4d5f-9aaa-de3e8ae2d8e6</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:44:06</sys_created_on>
+        <sys_id>c8328a59539f5a104d3491e0a0490e90</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:18</sys_updated_on>
+        <ui_id>59d5c151-7c73-4afe-856a-b36654210824</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">99a10259539f5a104d3491e0a0490e08</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</flow>
+        <flow_variables_assigned>active,retry_timeout,current_try</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:41:43</sys_created_on>
+        <sys_id>d5a10259539f5a104d3491e0a0490e09</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:18</sys_updated_on>
+        <ui_id>30d55d2e-a8bf-42e4-a411-040df92e3345</ui_id>
+        <values>H4sIAAAAAAAA/+2Y32+bMBDH/5XKT5sUMhPID7KnalWlSts6rVlf1goZcyTWiE2NaZtV+d93BkJ+NO1D11SbxBs+m7vvne8jTjwQVZisMPlEHee5mEoy/nndIUJaGz4/EMnmQMaEcSNugXTILUsLa6D4HIs8S9nisjYlLM3tET4Taayh9pUxjS4MaDJ+2NkyiwzClEWQ4tsTXcCH09qFiNHiu8zl4AZ9L0j6zKV+7PmBC5RRP6AAAZ5bvXy8krcr14bAdaRUCkyiQenYSqEdAvcGZAwYqRTeIXMmY2aUXjQWDSw+l+naMBPSoDtiD9/n4jf69qk9lwBmxaHaa5ZhXaHKzGdKcDjPjFCyshgWpfU7XKXFXH6t5NvaQsKK1OzWtjaf7K98kWNIyGxaVmctOrmYqbvvK02nQpYVqDdTxVnarJgxWkSFgdzeViEmu+WrTJ/33RmkMMew4ZxlmZDTMNPqVpShMLl5d5riopuk6g4l2lbr2ktSsos1Z91TtJ+U5kumhS3LF3SDL9uQP6S4KeDM9kTkUS/quwNnSIeR4zM/cVhEA4cPIu4OXc8b0JgsyysIbwqbWVXMuiZhVXk8kHMtMlP3zdhgIiubzbzuH3x67hxGMYWWR9O8OwXzTSsUbBbvrsh96Hq9AJs1RB2FjEPaxcaBqWY247DyfkU6R2XZ338ky+Wy07CGXvUiNGIOCOcGco+JezFsF3jNcroCLXgWtCTZAO271XY0abQ9IbnGLl+FeXXqRpS+CXcHhKopzjZTzdW8CU8+xJFP3dhJOAPHH3iBMxpFfScaDuJB3xv2GOWvwNN2fxwIq60glq4B3UWLF1pb2XhwAyz3MVnui9E6s4rKQpdsuQEC1es/wRbtbbD1qRJ3NCnF7VVccyWaGP/p5+yAWK1rs83V+l7eBCw2cpnnR9zp9xKGHyqInJGX+E7gu8NenwEHBi8Aq8x9eW17t4peTWllq+0Zf9pprZ3W2mntMNPaDnPt1NZObe3U9rpT2w5i7fT2b3ze2untb6e3GLjIUdXESjhb/W2zGwvsHME3TXdK/7L5rG3LP7A+QPa3EwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9c72ee1153539a104d3491e0a0490ec0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</flow>
+        <flow_variables_assigned>integration_success</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>440795f3-96b7-4903-b81a-ebbfa9975a3a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:05:01</sys_created_on>
+        <sys_id>d872ee1153539a104d3491e0a0490ec1</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:18</sys_updated_on>
+        <ui_id>09b87f42-c436-4814-a657-9f704336e68a</ui_id>
+        <values>H4sIAAAAAAAA/+1VbW/aMBD+K5M/A0sgrAvfKlVISNsqraxfpiq62Bew5tip7UAZ4r/vjgToqqn9Aeun2M+9PffcWdkL18amjWHprkPQKytmPx8GQlvG6LwXFmoUM0IirjxE7WwRWikxBDEQGzAtW1M6Kx0aA7v7HoqePgMh19ooj33eBjyli+jFbP/CFHcNFgZKNBS8pOCPczCBU2hFiErVVY4qnU7SSQ5pkqlJlqeYQJLlCU7H5HcKXlyofrg7U321Dy5OxtI5g2AJcF4xyWQg8CmiVUgcKuYzEDVYBdH53RnxCOrWmguwpiqUTrDzU9C/KXeWsF+F1K/Ezna+Fr10HSzXTku8bZhih0QoTR8jnWlr+63rhUXHCloTT6JXvWQ9fPP3SE7WNlBJbLgt5tmTru7Wbvv9xGmu7VGB3micBHO+QYxel23EwHNs9fKlfB305V/TRIM1lS1qaBptV0Xj3UYfS1Fz9Whl6DKqjNsSRV7IEUhWYkSaw2hO+M0RvgevWZavlIaCueQPqx9bXPC2QEo7gjIbylSNh1k5UcP88/TTsII8KVO4kvk4FYfjCIrHljvrxOw1KTrlySFIr5t4TRQ22Ld/eOC976p3T+S4oG+t2PtTeX8q/+NTUSh1IFZLprA4/VfYsKM90/I5tHX+F/dzwQ5/AH12YMGhBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d472ee1153539a104d3491e0a0490ec2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>440795f3-96b7-4903-b81a-ebbfa9975a3a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:05:01</sys_created_on>
+        <sys_id>dc72ee1153539a104d3491e0a0490ec2</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:18</sys_updated_on>
+        <ui_id>5c3f911a-bb61-45d1-8a2e-f1e843db9583</ui_id>
+        <values>H4sIAAAAAAAA/+1UXW/TMBT9KyPPbeQkTdX2BU2gSpOASWzaC0zWjXPTWrh2sJ1upep/5zofXcU6QGiPvNXnfp1zc0/3kWl83Xh3ay6dkysdLb7cjyKpA0a/95GGDUaLSBhdSi+N5i0wiragmhC40h5XFkLoYglSNRbfUriUrlawu/t9llhLVVrsp9ZgqbdHGy32v4T8rkauoEBFzW68lXpF5bKkV8WgSuYiEVk6zVLG0tkkKaZZkaRlBggZ5Q2F7wYRFx9aZPSiujCPcDdMMrYMtBI2ivDRoy6RRlegHI6iDegSvLG7I2IRymutnoC11J7aRSH50ckf1DvN85BYIWkU2AWPT96vr4PF2kiB13Ug2CEeCtXXCKOajf7U6QiLxwoa5YfFE9I46od1IB1Y9JSqm7V5+DwMXErdCuyDyghQxxd4WkPReHThw6DCDTXiG6hrWg6vrdnKtpi4bOKVokdcKfNAQ8NFxSAC8Zh2BPGS8PctfAdWBhUfqQ0VdzQLcFLw9vqonbck4dCuhX9vAqFOYC+Fd9ugBCesrP0lzdliz/owen66J1e738+nLJnMcD6eTbJ8PElSHM8QxThJ0iIvijkrJhBz3pHnzoNvHOexMCUeDm++NoxlJXt+6K/X+DW8MYe8yhOWn/fGZHrOG2dc8bIh0j8YInzCv/QDY+y/IU4NIR3vDrvX1g7/Zz/ch+PvJrjubkoU0hGR24BdDf/4IbCjA5DiFHow9luQ8IQdfgK5kR9YOwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e22ac6d153df5a104d3491e0a0490e09</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>5c3f911a-bb61-45d1-8a2e-f1e843db9583</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 21:18:57</sys_created_on>
+        <sys_id>ea2ac6d153df5a104d3491e0a0490e09</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:18</sys_updated_on>
+        <ui_id>a1492aa7-577a-406f-8d53-d57df090a6b1</ui_id>
+        <values>H4sIAAAAAAAA/+1V32vbMBD+V4yfg/GPJlvzUkpGYbCt0Ia+bMXI8jkRkyVPkpN6wf/77iy7DW3Kxuje9hKi7053352+Dx9C3bqmdXatL60VGxUuv97PQqEIw/+HULEawmXItSqFE1rlAzALd0y2FPjWxnH6btUaA8oFa9N5IBA2kGBt4LZMBdrQGX60TAZOBz7lBpzpgpVulfPABZYthW0k6+7+TXW+FbLEUn7KhhmcxYEJl4dnIdc1kEtWgEQSt84ItcHrosRTFbMqOecJz9JFlmLl92dJsciKJC0zBizDvOnialpa8GlAZq9uk/ohbqdO2pREK4lnITw4UCVg64pJC7OwZqpkTpvuETHAymsln4CtUA7LhZT8YMVPrJ3O55RYAc7IwQcfj/m4dg/zrRYcrhsi6BHHCjne4Vq2tfri56AHg4q10k0PhkhrsR40RJpYjJSq263e30wNr4QaBhyDUnMmH0/M4RqK1oGlhwEJNRbKa9Y0uJy8MXonhsvIpY42Eg9RJfUem5KCI8aJeIQ7YtEV4h8G+I4ZQVN8xjJ42dMsmBU8H9SO5ZzBEfphLTmJaRpwHCX328AEy41o3CX22cHIup+9tMqRSw6HgeFuJBFxr+gcNdr3pM+MD7/l80RDMs45ybjvX/rjzeq+hTPO2byaJ/H8tDPOFqecccITr9sh/Y0d6AH/0A1xHP+3w7EdhM29rMfZhuZ/7YZ7kr7vYL1uSuDCIpE1YR+n7wsFOhSA4MfQXpvvNMIT1v8CDjWwWqkGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=348d3115539f5a104d3491e0a0490e50"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=348d3115539f5a104d3491e0a0490e50^sys_idNOT IN0da1ce19539f5a104d3491e0a0490efb,1830729153939a104d3491e0a0490e6d,19a10259539f5a104d3491e0a0490e02,41a1ce19539f5a104d3491e0a0490ee9,91a1ce19539f5a104d3491e0a0490eff,a6768b9d53d39a104d3491e0a0490e9b,d1d79ed153139a104d3491e0a0490e52"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=56880f03-c867-4472-adb8-adec751aa77b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</model>
+        <model_id>348d3115539f5a104d3491e0a0490e50</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_348d3115539f5a104d3491e0a0490e50</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:41:43</sys_created_on>
+        <sys_id>0da1ce19539f5a104d3491e0a0490efb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 20:41:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=float,uiTypeLabel=Floating Point Number,uiUniqueId=131d8a3d-9e8a-46f9-a948-dd5cf727482c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>amount_dolar</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">float</internal_type>
+        <label>Amount Dolar</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</model>
+        <model_id>348d3115539f5a104d3491e0a0490e50</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_348d3115539f5a104d3491e0a0490e50</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 00:05:06</sys_created_on>
+        <sys_id>1830729153939a104d3491e0a0490e6d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 00:05:06</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=a81a34bc-52fa-4aeb-83f4-941725aeceae</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current_try</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Current Try</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</model>
+        <model_id>348d3115539f5a104d3491e0a0490e50</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_348d3115539f5a104d3491e0a0490e50</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:41:43</sys_created_on>
+        <sys_id>19a10259539f5a104d3491e0a0490e02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 20:41:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=b303b516-707b-4a4f-ab09-c6bc1713360d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>active</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Active</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</model>
+        <model_id>348d3115539f5a104d3491e0a0490e50</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_348d3115539f5a104d3491e0a0490e50</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:41:43</sys_created_on>
+        <sys_id>41a1ce19539f5a104d3491e0a0490ee9</sys_id>
+        <sys_mod_count>63</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4edb401d-fcae-4639-88b5-b76d65372a0c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_timeout</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Retry Timeout</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</model>
+        <model_id>348d3115539f5a104d3491e0a0490e50</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_348d3115539f5a104d3491e0a0490e50</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:41:43</sys_created_on>
+        <sys_id>91a1ce19539f5a104d3491e0a0490eff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 20:41:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2c7739a6-3e08-4d23-8b81-9c67c7e0d7c7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>integration_error_message</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Integration Error Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</model>
+        <model_id>348d3115539f5a104d3491e0a0490e50</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_348d3115539f5a104d3491e0a0490e50</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 01:42:27</sys_created_on>
+        <sys_id>a6768b9d53d39a104d3491e0a0490e9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 01:42:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=a19a1ec4-c1d2-4b3d-9856-fa90b1a7c921</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>integration_success</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Integration Success</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</model>
+        <model_id>348d3115539f5a104d3491e0a0490e50</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_348d3115539f5a104d3491e0a0490e50</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 22:18:40</sys_created_on>
+        <sys_id>d1d79ed153139a104d3491e0a0490e52</sys_id>
+        <sys_mod_count>55</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_348d3115539f5a104d3491e0a0490e50^sys_idNOT IN09a18655539f5a104d3491e0a0490e48,c1a18655539f5a104d3491e0a0490e4c,c9a1ce19539f5a104d3491e0a0490ebc"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_348d3115539f5a104d3491e0a0490e50</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:41:43</sys_created_on>
+        <sys_id>09a18655539f5a104d3491e0a0490e48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 20:41:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_348d3115539f5a104d3491e0a0490e50</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:41:43</sys_created_on>
+        <sys_id>c1a18655539f5a104d3491e0a0490e4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 20:41:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_348d3115539f5a104d3491e0a0490e50</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 20:41:43</sys_created_on>
+        <sys_id>c9a1ce19539f5a104d3491e0a0490ebc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 20:41:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_348d3115539f5a104d3491e0a0490e50"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_348d3115539f5a104d3491e0a0490e50"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_348d3115539f5a104d3491e0a0490e50"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>freecurrency_integration</internal_name>
+        <label_cache>[{"name":"960148e9-8435-412e-8eec-112b5bb90b4a.__action_status__.message","label":"6 - Integration Freecurrency Api➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"5ae30e5a-1515-4506-87ec-a3fbef4b5401":["log_message"]},"attributes":{}},{"name":"960148e9-8435-412e-8eec-112b5bb90b4a.__action_status__.code","label":"6 - Integration Freecurrency Api➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"f288fd47-2a66-4bff-86c0-d40596a8c198":["condition"],"5ae30e5a-1515-4506-87ec-a3fbef4b5401":["log_message"],"5c3f911a-bb61-45d1-8a2e-f1e843db9583":["condition"]},"attributes":{}},{"name":"960148e9-8435-412e-8eec-112b5bb90b4a.__action_status__","label":"6 - Integration Freecurrency Api➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{},"attributes":{"uiTypeLabel":"Object","co_type_name":"FD4bf80b917c179a10f3eeb3d74c235a38","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"bde741b1-4c06-4fc8-bc7c-bc6714f3510c"}},{"name":"flow_variable.retry_timeout","label":"Flow Variables➛Retry Timeout","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"095c74bf-93a8-4717-8660-5ac429c7893d":["seconds"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"4edb401d-fcae-4639-88b5-b76d65372a0c"}},{"name":"960148e9-8435-412e-8eec-112b5bb90b4a.convertion.data.USD","label":"6 - Integration Freecurrency Api➛Convertion➛data➛USD","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"06511e93-67d3-4098-aa23-f504c83e9976":["amonut_in_usd"]},"attributes":{}},{"name":"flow_variable.active","label":"Flow Variables➛Active","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"b13699b9-3789-4d5f-9aaa-de3e8ae2d8e6":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"b303b516-707b-4a4f-ab09-c6bc1713360d"}},{"name":"flow_variable.current_try","label":"Flow Variables➛Current Try","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"a1492aa7-577a-406f-8d53-d57df090a6b1":["condition"],"440795f3-96b7-4903-b81a-ebbfa9975a3a":["condition"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a81a34bc-52fa-4aeb-83f4-941725aeceae"}},{"name":"flow_variable.retry_count","label":"Flow Variables➛Retry Count","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"a1492aa7-577a-406f-8d53-d57df090a6b1":["condition"],"440795f3-96b7-4903-b81a-ebbfa9975a3a":["condition"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"56880f03-c867-4472-adb8-adec751aa77b"}},{"name":"095c74bf-93a8-4717-8660-5ac429c7893d.duration","label":"10 - Convert Seconds into Duration➛Duration","reference_display":"Duration","type":"glide_duration","base_type":"glide_duration","usedInstances":{"e5a3b0b0-08f9-49b3-9d48-c58f09cbe257":["conditions"],"dc4d7859-9314-43c9-a4a3-72364b40097f":["timer_duration"]},"attributes":{"uiType":"glide_duration","uiTypeLabel":"Duration","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3a9f88d8-46cd-4950-9bd6-ddaaaeb17131"}},{"name":"Created or Updated_1.current","label":"Trigger - Record Created or Updated➛Refund Record","reference":"x_1329491_refund_0_refund","reference_display":"Refund","type":"reference","base_type":"reference","usedInstances":{"e5a3b0b0-08f9-49b3-9d48-c58f09cbe257":["record"],"06511e93-67d3-4098-aa23-f504c83e9976":["record"],"915963ae-0e27-494a-8450-87bd1fd15bdf":["record"],"175215ad-476f-4f1d-a192-b55335dfe89c":["record"]},"attributes":{}},{"name":"flow_variable.integration_success","label":"Flow Variables➛Integration Success","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","usedInstances":{"440795f3-96b7-4903-b81a-ebbfa9975a3a":["condition"],"87521bca-8973-400d-ace1-43d745024ae4":["condition"]},"attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a19a1ec4-c1d2-4b3d-9856-fa90b1a7c921"}},{"name":"flow_variable.integration_error_message","label":"Flow Variables➛Integration Error Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"175215ad-476f-4f1d-a192-b55335dfe89c":["integration_error_message"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2c7739a6-3e08-4d23-8b81-9c67c7e0d7c7"}}]</label_cache>
+        <master>true</master>
+        <name>Freecurrency Integration</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Freecurrency Integration">348d3115539f5a104d3491e0a0490e50</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3b55ea1553539a104d3491e0a0490e35</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:22</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=3b55ea1553539a104d3491e0a0490e35"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3b55ea1553539a104d3491e0a0490e35"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3b55ea1553539a104d3491e0a0490e35"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3b55ea1553539a104d3491e0a0490e35^sys_idNOT IN3355ea1553539a104d3491e0a0490e37"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3b55ea1553539a104d3491e0a0490e35</id>
+        <name>Freecurrency Integration</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:49</sys_created_on>
+        <sys_id>3355ea1553539a104d3491e0a0490e37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 23:17:49</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3355ea1553539a104d3491e0a0490e37"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3b55ea1553539a104d3491e0a0490e35^sys_idNOT IN3355ea1553539a104d3491e0a0490e49,3f55ea1553539a104d3491e0a0490e50,f355ea1553539a104d3491e0a0490e38"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDCollection</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>global</scope_name>
+        <serialized_content>{"FlowDesigner:FDCollection":{"$COCollectionField":[{"FDChangeDetails":{"previous_display_value":"String","previous_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Display Value\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\"}"},"previous_value":"String","previous_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Previous Value\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\"}"},"current_display_value":"String","current_display_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Display Value\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\"}"},"current_value":"String","current_value.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Current Value\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\"}"},"field_name":"String","field_name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Field Name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FDCollection.$type_facets":{"SimpleMapFacet":"{\"pwd2droppable\":\"true\",\"default_value\":\"\",\"label\":\"Changed Fields\",\"mandatory\":\"false\",\"child_name\":\"FDChangeDetails\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FDCollection\",\"child_label\":\"FDChangeDetails\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"100\",\"max_length\":\"4000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-06-13 23:19:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>f4f014150f023300ecf0cc52ff767eed</sys_id>
+        <sys_mod_count>101</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Flow Designer Designer Model" source="com.glide.hub.designer_backend.model">5b965bacdcd212104f34465061b06a9b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Global">global</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-09-28 05:06:11</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</model>
+        <model_id>3b55ea1553539a104d3491e0a0490e35</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3b55ea1553539a104d3491e0a0490e35</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:50</sys_created_on>
+        <sys_id>3355ea1553539a104d3491e0a0490e49</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 00:05:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3355ea1553539a104d3491e0a0490e49"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</model>
+        <model_id>3b55ea1553539a104d3491e0a0490e35</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3b55ea1553539a104d3491e0a0490e35</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:50</sys_created_on>
+        <sys_id>3f55ea1553539a104d3491e0a0490e50</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3f55ea1553539a104d3491e0a0490e50"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</model>
+        <model_id>3b55ea1553539a104d3491e0a0490e35</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3b55ea1553539a104d3491e0a0490e35</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:49</sys_created_on>
+        <sys_id>f355ea1553539a104d3491e0a0490e38</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f355ea1553539a104d3491e0a0490e38"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3b55ea1553539a104d3491e0a0490e35"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3b55ea1553539a104d3491e0a0490e35"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3b55ea1553539a104d3491e0a0490e35^sys_idNOT IN1c65ea1553539a104d3491e0a0490eb5"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:51</sys_created_on>
+        <sys_id>1c65ea1553539a104d3491e0a0490eb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 23:17:51</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9Va227jNhD9FUFPLeAWuthWnD6lidM1kMvC9m5RBKlAUZRNVKa8EqXEXeTfO5QoW9bF8UVpsnlILJLinBmeOUOaefiu+sghvnquTpHjE7WjUsZJyJA/XS0JNHPRbDO0EH0LxFzEg3ClnvMwJh01CF0Squd6R02QH5PJKhq58BIMTd+Qr6uyG56fbd00Bt2BbofEi5lra/IDjHFptPTR6qscOs7b8Zz6bkiYev7w2FGXKISpuTD7vdRFhW3s6UQfnGnYNOBH04yzru70TUc3XBMRpMGEZZdLWHmN5xtHyTMnzCVgykN+RGqCEhLk3jN/VRjxHNF/Yc4zTfR6BBBjksVp/WhL97NmPA8oJvdLTgOWtWToss7AjxfsLkMtAkc8FPs8Dxy0xBHMR5YCKONrHN5kHjyNc4PXlKU+yU4/wMhfPyHOQ+rEnEQizB71IeB2FpEoiMMU/Xh4eT++sv+8mF5+Go7t8XAyHY8up8Mr9SX1y/4WixkzhBKLnbnzsl7ta0p8sWxO6MO4CId0yS8wpwmRWF46G45eBsylaUgqPMV5V7TNU+lPvn6a1khVXJg8p2vEESejO71jdM7+RosgZnw0ubufDm8/T/+SDV8vbi4/Xdz9MZwczFVLs1xXb+IqdgpcLbpeA5jXRKHo8y7WypZm2nY17Z2ImyXU0bxdBC7xrzbTqdA5mwGTKVvGXMQoj4sdLEko4gHvqZsV/U3+vR7f3+afp/fw3hNiPLJ5YCPXtQtRFybAl9cSIItJNQteT4EwZjCFvV7PaiKkC7BeiRsageMPkMN5lNMpod+7kVOOY6YEsPDwS8FxCEHmSq6F3miBZnJtvAnxCeYFEnlfouLTLY0iymYF1GujaVQqNtfmgIxK7lJmOzrR+OORKlCNb1KKW6lMHZz0Ou4amun0NUukvA4fPV2ztB7yXFPTnLNC0lfBNKLkpdVvMfkPS/0oZZu/B7fKgZWQtSLd9+JJsk2y3HXBAakwl+1A01uCZghoJaU0D5LKNRmz5qvS1mmHay1vDZCbIHjD3Vf5xIA9JM7zgydQ6SPkzUH4n1kYZFvHLb0RcyqUKZsRyk8yfj+3KHVeEJLdALZHvJPIbSKccxSxVQvyZpg6sfrdvgaqZgpB6w0GDkaG51l9i+h6Sd42MGqxfWBZe4VOSR0fmySulhlJHaEOELcTAFaE7mCAp0ucpGOtwGV9P4aUPc0JswFqaPtCrCqKNvOpS/K+o9O5YiXZJPCpKY2dgdvrWRa24IgCKe11iYP0rtFDA6tvEq+U0hUou2DymiC84cElWkWp+YZ0/5J1fazT91vyMiKci4JyeJ1lsP9M30GZkUKtE4uhpKoRhMpdwH4ZbcYpEwIlLD2ztlVw90EhFlZ5WxhOwOeVig+mf4f2LdNip9gQlfc89ZT4kGy7daqGIMNAA91s0BCrX6chGzDNMD/oBmHPFEgak6lup7Avo5PaxGgs7UdwtESOYs3fsSlpKyh660Ex3i4o5skboTwDG496x4D9gWpUul04pVAJm8QOvKI6XwUKdChgRKGeIr8XhJO7s1L4nEBIfdjxgkFFWD9VlotlogplzeD/F0i2h66UK2hW5A7pXStRadXbPaQS18QDt6kada3GHW1zSSp1f9C6dDDtk7os2lmcDpu3PGdteSpwcpsHexaeVr2urz6neV1bf17z+vTKsuuIXYPi49cMAXqaLcMRlSJguHSCwG3egcSMfouJjeeIzbL7jdzQNcSZIDxXsiFKNqRNrfef0CpSy0UHSCvyQn5FDA2QISzTr7Ysk4SEq4qvolGJlyB6p3q5q84YO+pMfhMY8RBAzFaFJMshH/i9pzOAROpp2NR1s3KX2yve5W6ztBlQQw0xjq0hc5peghbMy5XgdEFSxVrfZCoLxPGcRB0Fliu9SkgFjYYRT0f/qrZ4VMLFKxeZhHUlpjFNkqYMa5TsHcxPyjlTp9E1LC7Tp6jSOw9FO9zXW3HfaMN98zj3uycXKRmR+iolo9duZTri31fU+tL0+B9+nFf5YSUAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=3b55ea1553539a104d3491e0a0490e35^sys_idNOT IN42a84f5153179a104d3491e0a0490e4c,5465ea1553539a104d3491e0a0490eb5,5865ea1553539a104d3491e0a0490eb3,9465ea1553539a104d3491e0a0490eb4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</flow>
+        <generation_source/>
+        <order>16</order>
+        <parent_ui_id>87521bca-8973-400d-ace1-43d745024ae4</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 01:51:59</sys_created_on>
+        <sys_id>42a84f5153179a104d3491e0a0490e4c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:22</sys_updated_on>
+        <ui_id>175215ad-476f-4f1d-a192-b55335dfe89c</ui_id>
+        <values>H4sIAAAAAAAA/+VVXW/aMBT9K5GfoyghFBXeJhBSpa6V6NaXrrVMfAOWnI/ZDoUh/vuuEwci6DoqdQ9oeYrvh33O8T3J05YITkakDzyMhtEgiaM47oVh77ofzQfxPOrxmAFExCc5ywArFSSF4rheMVnZwHY7VsAMcK9Q3veS21caBUmlFORmt8NSLnQp2ebRdWAkWQrJMU9GT88+KZnCzQ0oMtoepc5FJ9kcJJbOWnjHcM2mtGteJFWGuKhog7euc+Iy3s0EM9hk4UShT2BtIOeAQFImNfgkYzmyLNSGjIyqMID8+X0uN/uKpchNQzRjay1+4cn90NalgMwSJ8J+SZ1ATTidMMMecOfEVGqvVyES0I0mHFJWSTPuxpqC+9KIIm9aDJvLtruQVZbfNYqQ/Qad+6g0goDS8rTIG1rpw7J4nbUgpyKvJXEUZZEwuV8xY5SYV8bC2RKQUGucsbIU+YKWqliJuhmhZMFC4iJIZfGKZ2qxyAOWWNwBqsqCKcYndfiRKWFJfMVtsHnnE73RY8m0PlBBDenPyiJpiDkKtFahloDWk2CbEyVK8wWPWoEDvvPd/M+v3puwZHgYqM6eBw+saRT3hv1hRBFPlXMaupfT4Z+18Y9Z4AyArQW+1Rf/NmDngpPYbbfXu2sSzgNXn+aB60vygKNx8Sb42+iHvXc/rp1Jqqddd8YebxgWilnYVBv88P+owjDmN4ewN2VC4g2+dEtBqULRDLRmiz+3nFrnXx/3MUeeoVvryKkAyfUbQrZ2hAx5GqCNsEeWdEnv0SX3v6ZP82U0COvngtz53/yhnn8DJvhuGaMJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>dabeea18-114d-479d-9038-de6b7cb1ba61</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:51</sys_created_on>
+        <sys_id>5465ea1553539a104d3491e0a0490eb5</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 00:44:45</sys_updated_on>
+        <ui_id>06511e93-67d3-4098-aa23-f504c83e9976</ui_id>
+        <values>H4sIAAAAAAAA/+VWXWvbMBT9K8ZP60iMvxKS7Gk0BAZdC+3al7YI2bpOBbLsyXIaL+S/78qWk6wN/YC+lOUpul8+5/oc27cblzN35sbA/GAajNMoiKLQ98NJHCTjKAlCFlGAwB24kuaAlQrSQjE8r6ioTWCzOVVANTCnUM51ycxfEnhprRRIvd1iKeNVKWhzYzswkj5wwTDvzm7vB25JFQ7XoNzZ5knqregETUBg6WUP7ylc3ZTmzIq0zhEX4X3wzHbObcb5MccMNhk4gT9wYa1BMkAgGRUVDNycSmRZqMadaVVjAPmzCymaXcUDl7ojmtN1xf/glWPf1GWAzFK7hN2R2AV14WxONb3Cyamu1W5fBU+h6nbCIKO10KeHsa7gotS8kF2LponouwtR5/K824i7G3BwP+oKQUBpeBrkHa3s6qF4vOxBLrhsV2IpiiKlYneiWiue1NrA2bggoN1xTsuSyyUpVbHibTNCyb2lwIOXieIRr1nxpfRoanB7uFXqLTA+b8M3VHFD4ieOwebtwK2a6lTQqtpTwR2S37VB0hGzFEi7hXYFpFWCaU4VL/V3vNQKLPDtwOo/Gb2ksHS6F9TBzL0H1iSIwmk8DQjiqSUjvv3zXPyXffx9FngDwN4Cv9obfxywdcGz2Nlhr3PeJawHRh/mgcln8oCl8elN8Jr0/fDFh+uBklq1Vweyp3kha3yUSlJX7K72/YhlbNhdDI5o/9X693niDch7Tyw4CFYdodIbAnIEqoF01J6YwiadG5vcvRw+zBnB2G9/n8gf/8E7oqPYxQzmf/RrAi+Vo8aUg3VOJ3QH1VwBAqf6S8ZIS4OMCQ7TsFTUcCOZAui+m9KG0JJ7aSFXoPa8r6/mJ9/upJlc0qaf3I/D9S6XoPpPLw/h1lLbegUV3s49mMb5atBh1rmTClBG0tZ4uljwNbAv4Qmuq6IrYL0K/M1mOvaDeALT4SSORsM4CGE4QdTDIAiTUZJM/SSmx3Djh+B2u73/C5a5y+9xCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Integration Freecurrency Api">6c7386d9539f5a104d3491e0a0490e04</action_type>
+        <action_type_parent display_value="Integration Freecurrency Api">e6e13015531b5a104d3491e0a0490e3a</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>6c7386d9539f5a104d3491e0a0490e04</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>440795f3-96b7-4903-b81a-ebbfa9975a3a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:51</sys_created_on>
+        <sys_id>5865ea1553539a104d3491e0a0490eb3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 23:17:51</sys_updated_on>
+        <ui_id>960148e9-8435-412e-8eec-112b5bb90b4a</ui_id>
+        <values>H4sIAAAAAAAA/4uOBQApu0wNAgAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Convert Seconds into Duration">7fb50a785303d2104d3491e0a0490ea5</action_type>
+        <action_type_parent display_value="Convert Seconds into Duration">89e9fdb053cf92104d3491e0a0490e5c</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>7fb50a785303d2104d3491e0a0490ea5</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>a1492aa7-577a-406f-8d53-d57df090a6b1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:51</sys_created_on>
+        <sys_id>9465ea1553539a104d3491e0a0490eb4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 23:17:51</sys_updated_on>
+        <ui_id>095c74bf-93a8-4717-8660-5ac429c7893d</ui_id>
+        <values>H4sIAAAAAAAA/41Sy27bMBD8F55lQbakOvatSBAgQNsAdZtLEAgrcWUToEiFDyeq4X/v0mTUILn0yOHs7szsPp6Y4GzL1m1bF7C+qsui5KtlUfGy2iyxgKLaFAhXLGMKBiSmxU4rbgk4gvQBOZ16qV+aIxgBrcTcoDNT48SA2rvzmZhc2FHC9JAKCOkOQnKDim0fnzI2gqHmDg3bnj58/a86CS1Kou5meZ/0umkMgFAO9zQqAt9S3d2MasODkGXG8NWh4kgKepAWMzaA4uC0mdjWGU+AQeD3Sk4z40Ddo8MBXq34QwOrIvB6JEtdcj8/m5RMhPsbcLCjzp3zZg5Kiw5tDINjD1666/dYJNyPTmgVS1zYQqrW0g/qR0yCzQ3eLcJbEoFj8BmUJxv97qBffr6pvBXqEkn6lLoDOb/AOSNa74KeE/Pi18eUI/Q5Z5Q40MxmgHEUat+MRh/FZQ7JHvK9pEd+uSyOVuxVDl3wmNMGIL8l/OYCP6Sz+05t0rzfSjx7vAuXU9fVl7qucVHjqltU0FeLzbqERd93dclhg7hesXPG7GSvJVj7LyraUfPsg9EYXIqoiSmHks6I0X0lUUdMaZyf/gLyxpWkUAMAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3b55ea1553539a104d3491e0a0490e35"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3b55ea1553539a104d3491e0a0490e35^sys_idNOT IN4065ea1553539a104d3491e0a0490eac,4065ea1553539a104d3491e0a0490eaf,4c65ea1553539a104d3491e0a0490eaa,4c65ea1553539a104d3491e0a0490eb0,8865ea1553539a104d3491e0a0490ea9,9950b69153939a104d3491e0a0490ecf,c065ea1553539a104d3491e0a0490eae,c865ea1553539a104d3491e0a0490eb1,cc65ea1553539a104d3491e0a0490eac,cc65ea1553539a104d3491e0a0490eaf,d065ea1553539a104d3491e0a0490eb3"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c0328a59539f5a104d3491e0a0490e90</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>b13699b9-3789-4d5f-9aaa-de3e8ae2d8e6</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:51</sys_created_on>
+        <sys_id>4065ea1553539a104d3491e0a0490eac</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:21</sys_updated_on>
+        <ui_id>59d5c151-7c73-4afe-856a-b36654210824</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d472ee1153539a104d3491e0a0490ec2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>440795f3-96b7-4903-b81a-ebbfa9975a3a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:51</sys_created_on>
+        <sys_id>4065ea1553539a104d3491e0a0490eaf</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:21</sys_updated_on>
+        <ui_id>5c3f911a-bb61-45d1-8a2e-f1e843db9583</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lZRnWaAky7B9KQIHBgKkDdAEubQBsaIomyhNqiSVxDX8712KshM06SNojr2Zs8vdmREH3hHT+bbz7tqcOidXmsw/3yZE6oDh7x3RsBFkTrjRtfTSaNYDCbkD1YXCufZiZSGUTpYgVWfFeyzX0rUKtje/7+JrqWorhq0tWJzthSXz3U8lWeOQhkKTzXjGi3xS5JTm03FWTYoqy+sCBBQ4UEElFLYuDnRPLnok+aUOv20D7ryVejWcL4YpVwfQ2DqwymhCxIMXuhbIpwHlREI2oGvwxm6PiBVQX2r1CKyl9jiOhOYHJ7/jwrwsQ2MjUCIXsXg8ssG9CDdn4AGpdNyjbRHjayO5cNGcWjTQKb94isWGyzZIjVc8VOpw26huoz9GR8hxwOFjIdI5JCHaoDRQH3Q0V2tz/+nAcil178pQVIaDOp7Ao3dV5wOfHRFKbHAQ20DboqOsteZO9peRyyZdKTykjTL3uDS8whR4IJ6isZAuET/r4RuwMqj4gGPwcqRZgZOc9S8Wx6FNguwT4rZuocC5R5HoLvvWBYpR8iCORX/CFW5l609x850YdOyT5wF48vZ3u9mEZuOpmI2m46IcjbNcjKZC8FGW5VVZVTNajSFlLMphzoPvHGMpN7XY79996Sgtavo8Lm83+HUJm0HZlBktX07YePJSwl7I1itjlf8hVuGb/mWqKKX/Y/XPsZKOxTAM2vrlb5iq2xChuPPoNZcOqV0H7Pzw7xMKW3xckj+F7o39GkQ9Yvsf4gra0scGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c4328a59539f5a104d3491e0a0490e82</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:51</sys_created_on>
+        <sys_id>4c65ea1553539a104d3491e0a0490eaa</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:21</sys_updated_on>
+        <ui_id>b13699b9-3789-4d5f-9aaa-de3e8ae2d8e6</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0HPxvijCWteRkkpFLoV1tKXrZhrWU5EZcmT5KSZyX/flSUnYc1oy/bYt+jcr3Ou7yE9UZ1tO2vu1YUxfCnJ/PtjRLh0GP7uiYSGkTmhSlbcciWLAYjIGkTnAtfSsqUGF5pwM+ESqOVr9hlTKm5aAduH1zPpiotKszC9BY0zLNNk3v8R4hU2qhOo03Oa0jyb5VmSZJ/O0nKWl2lW5cAgx4YCSiYwdTHSntwMSPRXPXbbOtxYzeUyvG9Cl7sRVLpyrNIkIuzZMlkx5FODMCwiDcgKrNLbPaIZVLdSHIAVlxbbEZf8bPgvHJhNpy6xZiiRMh/cP4uwQQ/Xl2ABqXTUdjqk0pXilBm/nIrV0Am7OMZ8wm3rpPoSC6UYq5XoGvnVb4TsG4wfDJHOIAnWOqWOetBR363U5tvI8orLYSshKBQFsX+Bxd2VnXV8esIEa7BR0UDb4kaLVqs1H4qRSxMvBT7iWqgNDnXXGLsTUTLGxUJ8hfjlAD+A5k7FF2yDxZ5mCYbTYrhcbIdrYmQXEbM1CwHGHETidoufnaPoJQdxhd+PK6Gat/ZiOM6gYxe9NMKRB/p+4LwOtGJ/2Lvdjy5J8mro8NIObyt6nzPOYVpP02R62hlns1POOOGJd9ohe8UO7lu80Q1JknzY4Z/twE3hjzho88f0/9zw6E7fz9zvmnKD1O4ddj3+e7jAFo+L02Noo/STE3XAdr8BQuMX/4cGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e22ac6d153df5a104d3491e0a0490e09</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>5c3f911a-bb61-45d1-8a2e-f1e843db9583</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:51</sys_created_on>
+        <sys_id>4c65ea1553539a104d3491e0a0490eb0</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:22</sys_updated_on>
+        <ui_id>a1492aa7-577a-406f-8d53-d57df090a6b1</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0bPxthJk619GSWlMOhWaENftmKuZTkRUyRPH0k94/++K8tOQpuxlXVvewnR0dXROSc6pCXK2dpZs1SXxvCVJBdfHmPCpcfwe0skbBi5IFTJkluuZN4DMdmCcH7jq0vTybuF05pJGy11E4CIm0gwYyK7Bhkp7dfsuwMRWRWFkTtmdRMtlJM2AB+QtuSmFtA8/Bt2uuaiRKrgsgaNXizT5KJ9tsVLvLxKocrOaUank/l0ghzvz7JiPi2ySTkFBlMkFFAwgaOLMZ7opkfiX+Zmm9rjxmouV8P6ZmC5H0GlS68qS2PCniyTJUM9FQjDYrIBWYJVutkjmkF5K8UBWHNpkY744SfDf+CFk9nMD1YMLVIWNvfLfEg9wNUVWEApjlqnh1G6VpwyE8IpWQVO2MUxFgZua281HLFQiPG0Em4jP4dEyJ5g/JERcQZFsNo79dIHH9X9Wu3uRpXXXPapDJtCURD7FVjMrnDW62kJE2yDRPkG6hoTzWuttrw/jFo2yUrgIqmE2uGl/tUnQL3wBIOF5Brxqx5+AM29i09Ig4eDzAIMp3nfEKTDmBjpYmIasxBgzMEkppv7JzlaHszlIR9/hGpe20u8ecsGH138snBHXWvbXvN2kJXQ0IscX3rX+Vc+pf1n+XxQ+zLk1Jeh61627M14X9evc5hVsyydne7X2fxUv04065WlmvymVP4X/cNOpWn6v1R/XSpu8lCFwVt/+Rt26tEXKNy5z5pyg9KWHvs4/tf5jQYfF6fH0E7pb97UAet+AhJZJkw1BwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">99a10259539f5a104d3491e0a0490e08</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</flow>
+        <flow_variables_assigned>active,retry_timeout,current_try</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:51</sys_created_on>
+        <sys_id>8865ea1553539a104d3491e0a0490ea9</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:21</sys_updated_on>
+        <ui_id>30d55d2e-a8bf-42e4-a411-040df92e3345</ui_id>
+        <values>H4sIAAAAAAAA/+2Y22rbQBCGXyXsVQuWu7Lkg9yrkhAItE1J3N60RYxWI3vpeqWuVklc43fvrCQf4iSFQFJ68J129vTPP/vhwUuWV7aobDnJ35SlnGo2/vy1w6R2MfpeMpmyMWMdpmGO9AXCyiuk8RWoygU4faeyLBQsPrWhDFTploiZVKnB9swCDB1h0bDxcm+qviP0wRfoR/0gyvrg8zANwshHDjyMOGJEBypIUNHSN2sR+6LsonDjJM8Vgm4Db9tdE1Phq9NWW25Sp4R3GN5Y1CmShFp3h81Bp2Bzs9hEDEJ6rtU2MJPaNrbM4aaUP+jSkLt1GVJSApu5zTBuDWrC2QlYuLSmErYy7VIxy6XAsrEjxQwqZY93Y82C88LKXDdbLCRqvTtX1Vy/b8xgmwP269GGT+6vVlWSTiycFy65NtPscpZfX6wTOZW6tq2dVLkAtRmBtUYmlXWSl6ySk/1iNKF7y4EK53RtPIeikHoaFya/kvVVlNy8O1U06GYqvyaJ7pl2Xclz3aVCQfeU4id1+BMY6Wx5R8fQZnflRy2/V3jmXlgS8CDp+wNvyIeJF0KYeZDwyBODRPhDPwgGPGWrDisX5bGCstwaSpWMv1cu18be1qW4qYXbIowsbPsux1RbXMecF+37pK9fraNb6EHoo2nZnaL9YHJKwS5efGE3sR/0IoIhJh2VTmPepfeHUwPOg7g5/QvrHNWFePmarVarzh1y6XSziK2cIyG/A/Bdfh+NbvRLdLNsB90Lp+JoslHxgLgW5JJelJ7ucXy5Dj45wyPO/1yKnxHRjc23Cd0Y/VvoDDFNQu6nXiYAvXAQRN5olPS9ZDhIB/1g2AMunoXO22/vmSC9dYljdcAfAlVUxjj5tGEHU/8up/6jQfUjorPXfwBU3tsB9bhRcTSpVdwrrYW0TrOu5y6lZ5vo//RT+4yQbm2+TenW6N+CKYx8CMJEeP1eBvQjiok3CrLQi0J/2OsDCgR8EkxrN1ZfHQGNnkM/+o9AcuhHD/3ooR899KOHfvTQjx760b8V0v+2H01RyJJ0Tpyos/U/pW5iQc9Sit3QdW6+uQy3sdVPQd39vHMVAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">150c225d53539a104d3491e0a0490ebb</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 00:05:42</sys_created_on>
+        <sys_id>9950b69153939a104d3491e0a0490ecf</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:22</sys_updated_on>
+        <ui_id>87521bca-8973-400d-ace1-43d745024ae4</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnQdAjNhrfAgcGAqQN0AS5tIGwoiibKEWqfNhxBf97l6JkG4nbJG2PvYmz5HJmuAN1RDnbOmvu1aUxfCnJ7MtjRLj0GH53RELDyIxQJStuuZJFD0RkDcL5wrW0bKnBl84WwIXTvlpx0wrYPvx2E11xUWk23NmCxs6WaTLrnpV4hT3qBOr0gqY0z6Z5liTZh/O0nOZlmlU5MMixoYCSCdw6H8me3fRI9EsVdtt63FjN5XJY3wxd7kZQ6cqzSpOIsCfLZMWQTw3CsIg0ICuwSm/3iGZQ3UpxAFZcWmxH/OYnw3/ghdlk4jfWDCVSFor7ZTGYF+D6CiwgFUetd63H6Epxykwwp2I1OGHnx1jYcNt6qeGIhVKMp5VwjfwUHCH7BuNbIeIMkmCtV+qpDzrqu5XafB5ZLrjsXRmKQlEQ+xVY9K501vPpCBOswUZFA22LjhatVmveH0YuTbwUuIhroTZ4qZ/BGKgnHqOxEC8Qv+rhB9Dcq/iIbfBwoFmC4bTo5xXboU2M7CJitmYuwJiDSHS3+O48xSB5EFcEf/wRqnlrL/HmNRt07KKX4380+V3Xc14PtGJ+GPLCOIqPYXa7ry5J8qpv9zIWf9DhfZm5gEk9SZPJ6cycT09l5kRa3hmU7JWg+Fd6Y06SJPkflL8OCjdFGO9BWximf5eTRx+KcOfea8oNUrv32PX4N/GFLQ4Xp8fQRulvXtQB2/0EYlpPlZcGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9c72ee1153539a104d3491e0a0490ec0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</flow>
+        <flow_variables_assigned>integration_success</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>440795f3-96b7-4903-b81a-ebbfa9975a3a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:51</sys_created_on>
+        <sys_id>c065ea1553539a104d3491e0a0490eae</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:21</sys_updated_on>
+        <ui_id>09b87f42-c436-4814-a657-9f704336e68a</ui_id>
+        <values>H4sIAAAAAAAA/+1VTY/aMBD9K5XPgSYQug231SIkpLYrFbqX1Sqa2BOw6thZf8BSxH/vmATYrqoee9pT7Df2zHtvPMqBmeDb4N3K3Don15pNH58SJnXEaH1gUrApYwnT0CCtpPa4tuCl0aULnKNzFNyCCjGa0VpI1yrYP/SQt/RJGN9IJSz2+VuwlM6jZdPDm9CpnsjETYEim4yzcQFZmotxXmSYQpoXKU5GlFBBhYqOLq6EPiwvhP7J1u/bGKyMUQi6B770+VbE9+MclIusjRWRY5owfPGoBRK5OsYS1oAW4I3dXxCLIO61ugIbKt+Z18CLk7+oaJ7GczWSXI5d7LIte+c6uJ6BhyW5x32w/VG+MZI0dEYJrCEof/ca6w7ct1Fwd8VDpc63jQqN/tY5wy4Jzo2qe809PPuzjedocMQT2+hFFNcrrZcbs/t+FjKX+mRbH1SGg7rswHsrq+Aj5QMLcvW2GR3013agwobKlg20rdTrsrVmK0+lSFwzXCvaDGtldkQxPuYh8OjEkBoFwznhsxP8AFZGW75SGrocS/7Q8jngIr49yOjFIc8HPBOjQV6NxaD4PPk0qKFIqwxueDHK2DFhbu/uFDh3NZQ6WT6HqLWzt3ep7HoRr3ArW39LpLbYG3J8itPT8XkfuPeBex+4/zBwArl0xHMVSS3O/7oY2NM7lvw1tDP2Z1R4xY6/AUju2ss1BwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6e2ac6d153df5a104d3491e0a0490e0a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id>a1492aa7-577a-406f-8d53-d57df090a6b1</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:51</sys_created_on>
+        <sys_id>c865ea1553539a104d3491e0a0490eb1</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:22</sys_updated_on>
+        <ui_id>dc4d7859-9314-43c9-a4a3-72364b40097f</ui_id>
+        <values>H4sIAAAAAAAA/+1ZbW/iOBD+KyifKZf3AN9W7VVaaV9OBfXLqYocZwLWmSTnOO1yiP9+tuO8AIEtu3TFSv3UZsYZPzPzPBO73RhZyfOSF/PsQ1GQRWpM/34aGiSVNvH7xkjRCoypEZcMcZKlIV/nYAyNZ0RLaYdvOSWY8LBeIHwxKXKK1o96yZ96yaCzBC8JjRno7XLExC4cmDHd7LlILCK4k8DxxpYbOKZjOaYZ+Rb4vhv4UeKjYOyJgBRFQMXSO73HYF7hPAJf/ZiKvTKC6+dPOsRtbcxYLCFZpjkUeXJIYxBoEkQLGBorlMaIZ2zdWBig+GtKW8OSpFzEM+TibwX5T+zomnJdAiI/DJWveQx13Spzcoc4mnFWYl4yvbSCW/WlTrivuqeao5Myt8M2xgNQ4X6GvhhM+3piWN0YfwHDkHK06I2SN96eOPZWNDqGBJWU314uResCKdoXStGRKVbt+5or19RwJO9QROvmZrRcpV8qvhpNQR5PCa1acvd9vZWFQAW5pLDkpCZoMltmLw81/+5JqrBqJ80wos0T4pyRqOSyNRsDKKxEoHCF8pykizBn2TNRL4s0VqMFFQ+jhGYvYlM5VUYISyAjoRg0uhf2O2V+RIzIAnwWYcTL26FRrItbioqiLYOQR/hvKZFURdE5hKqE6hXMSM4/YNlBDVc2TQu/0xVOVsBCNdpCAQTkc6d/h4Pr7DkVJVbsW74VBY5viznluNjH4E8ALAtNbLMzpzpcUrgGCtdA4hpoYK/OQA8zVXVlDzuOeqqJcQJ/zCv7Gww2FesSk61vFBxq5yzp/C78FywqworOOje1+ZvooqJSy63LCmFsOo5jTrDnBI0Q4hggSYLIssHqFUJL+R5wmuOCeLBQpepy+2NjfWf2O7MVeXo+0JuNOfFw4EbJzcRB4xs3sIKbse+bNx7Crj3BwXjixKP6ze32UAjmYAY4S+PibEVAYrkePnaEjaDnCLuvh05KuxN/1/7pMEx9mLnCg+y7KH6hKA4OumEmgMjmd2SCEq7A7VG/Np9H+xgj1zK9I7S3/Q7t5+oYxPbP6YMOxNcnc879zrlCWbSXjrru++3pu8dFkGSs+ylvDM2V6PRN6zubWWdtZv/0naehYu89p/buiV2U9Bq1XiPE6/DUvbOzTHO4JeL5g2H3zx4/PCXe5rZkJbYXH50NgXNiNhzekl4B/UevSe4Vzodf8tn8SSX1f92G7woTZVlCXNIL6ymJPE8cMo/oybd3j5ii8gO+hEGSUVFS+dRBdQytLljL4F3xPHTsWjzeBcXj2Lviwau0C65PSLPWfQWCOv8cmswAMby8J0Bli1Vffrc/xj1Jllexm0pjUggIc2n7WP+vQTrWIkOCu6aXjP0jwbe27f/Px9e9tRgAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">6f130e99539f5a104d3491e0a0490e95</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:51</sys_created_on>
+        <sys_id>cc65ea1553539a104d3491e0a0490eac</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:21</sys_updated_on>
+        <ui_id>440795f3-96b7-4903-b81a-ebbfa9975a3a</ui_id>
+        <values>H4sIAAAAAAAA/+1V32vbMBD+V4aejXHipSl9KymFQdeytfRla81FkhMxWfL0I6ln/L/vZCtOSFu2ssFelifrO93dd5/uIy3R3tXe2Tt9bq1YKXL25SEhQgUMv1uioOLkjFCtmHBCq6IHErIB6UMAP5mwtYTmfo/QtZDM8FitBoM5jhty1h6FBMOEJYMpXWbv53mWT/IsO5lM6XSel/g7gfksw4ISllzi1cWOxrurHkle5eeaOuDWGaFW8XwVq9zuQG1YYDXJsoTwJ8cV40ioBGl5QipQDJw2zYgYDuxGyT2wFsoNE1fwZMUP7DidzcLFkuOMNMoxHoso1QCXF+AAuXjqvBmV04JyO6jDeAleusUhNly4qcOsQ4qDpdxla+krdT1IQsYCBy/jLZLgdZg0UI9zlLdrvf28Y3kpVC9LDEpNQY4ncCje0rvApyVc8goLFRXUNUpa1EZvRJ+MXKp0JfGQllJvsWlYrxRoIJ6isJBeIn7Rw/dgRJjiI5bB5C4htrELCdbuZ0ERi+8+MBkmizMUgwwhhRpRu3NssOGRbpc8X+CD3W3bntomdk/xNfnKQL9G1lPU3HbdV59lOcNX4o/Xn44zqDcmkHCmiTf58RXDMVhQ7ZXruudu+Scc3uZPNp/kp+Vr/jylL/nzBWe+0ZTTX5kyyPGbnsxCrf+m/CNT4jLYYvBYnK1v/hfN+hCcOfQctabCIrW7gH3Y/SmFQIPbJeghtNXmWxhqj3U/AWDmQAzeBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ee2ac6d153df5a104d3491e0a0490e07</block>
+        <comment>Set integration success to "false" and +1 on retry count</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</flow>
+        <flow_variables_assigned>current_try,integration_success</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>5c3f911a-bb61-45d1-8a2e-f1e843db9583</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:51</sys_created_on>
+        <sys_id>cc65ea1553539a104d3491e0a0490eaf</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:21</sys_updated_on>
+        <ui_id>ef161ce1-1492-4bff-be15-b71fa81c6b92</ui_id>
+        <values>H4sIAAAAAAAA/+1X72vbMBD9V4K+Ls7sxF7r7lNpKQS2FdasX0YJZ+mciimyK8lps5D/vSfbSdymFAb7xZZv1pN09+6dHodXrKhcWTk7KU6tlTPNTr7e9JnUHqPvFZOCnTDWZxrmSF+8Mga1mzqzJHABqsJmX0hbKlhe7xB+K5Wgw03IEgxFcGjYyerZVp0iSiEKh0majNI8oc9YjOI0whDCOA0xHFJABRkqOnrWcOhNag4vEnPL0oNSO5xRygb40N4fb9HCCE8o7DN8cKgFEpMclMU+m4MW4AqKtkEMgrjUagfcUvim1Dk8WPmdMsahP5cjUeGtDNvltJWogfNzcHDlTMVdZbaKFZKjbVQRmEOl3FkXaw5clk4WurniIFOb24Wq5vpTIwfbBuh0pLJEAktfqGfelpFf3Rb3nzcsL6SuNWk3VcFBbVfgnJFZ5TyfFavk5LnMDbQvNCqc++7MoSylnk1LUyxknYdozwczRYtBrop74uef4QC4r3FALYDBBeHnNXwNRvqCP1KYNt8XLe8qHPsnBMcRjOKMB8kwhyAGzILjUR4HaRwdDRNAjoBs3Wd2ac8UWLuTino0vat8oY1wrUTTRmV/hRtZulMitaAr1DXcYPVz7rw9Wr52mFJRv3UvF9O6trrmBZhBJ0bvTS96z9brdX/PfrXSBrw2U1txehi2Y8Nw34d1437YjCISRymKKBlFo3TPjEnXjOMdo97VltGrdFtzZkWhEPQzc05IrrcXLev/yZ+bTrXw+ct9/FUW3jXjqYWftOP3uNhPAuRxwCMxDOJsJIL0OHkX5JCGWQRHPB1GP8XFtSDrG2+fhs9h4P1ThjoMvMPAOwy8v9efh4H3pwaeQC4t8Zx4UuPNv57fWNI7lrwL3Rfmm69wh60fAaiqvOM1DgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5453629153539a104d3491e0a0490e40</block>
+        <comment/>
+        <connected_to>5c3f911a-bb61-45d1-8a2e-f1e843db9583</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>440795f3-96b7-4903-b81a-ebbfa9975a3a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:51</sys_created_on>
+        <sys_id>d065ea1553539a104d3491e0a0490eb3</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:22</sys_updated_on>
+        <ui_id>dabeea18-114d-479d-9038-de6b7cb1ba61</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3b55ea1553539a104d3491e0a0490e35"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3b55ea1553539a104d3491e0a0490e35^sys_idNOT IN0550b69153939a104d3491e0a0490ea9,4465ea1553539a104d3491e0a0490e93,4865ea1553539a104d3491e0a0490e8c,8065ea1553539a104d3491e0a0490ea3,8c65ea1553539a104d3491e0a0490e84,c065ea1553539a104d3491e0a0490e89,c2a84f5153179a104d3491e0a0490e42"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=float,uiTypeLabel=Floating Point Number,uiUniqueId=131d8a3d-9e8a-46f9-a948-dd5cf727482c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>amount_dolar</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">float</internal_type>
+        <label>Amount Dolar</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</model>
+        <model_id>3b55ea1553539a104d3491e0a0490e35</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_3b55ea1553539a104d3491e0a0490e35</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 00:05:42</sys_created_on>
+        <sys_id>0550b69153939a104d3491e0a0490ea9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 00:05:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4edb401d-fcae-4639-88b5-b76d65372a0c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_timeout</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Retry Timeout</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</model>
+        <model_id>3b55ea1553539a104d3491e0a0490e35</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_3b55ea1553539a104d3491e0a0490e35</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:50</sys_created_on>
+        <sys_id>4465ea1553539a104d3491e0a0490e93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 23:17:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=b303b516-707b-4a4f-ab09-c6bc1713360d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>active</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Active</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</model>
+        <model_id>3b55ea1553539a104d3491e0a0490e35</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_3b55ea1553539a104d3491e0a0490e35</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:50</sys_created_on>
+        <sys_id>4865ea1553539a104d3491e0a0490e8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 23:17:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=a19a1ec4-c1d2-4b3d-9856-fa90b1a7c921</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>integration_success</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Integration Success</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</model>
+        <model_id>3b55ea1553539a104d3491e0a0490e35</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_3b55ea1553539a104d3491e0a0490e35</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:50</sys_created_on>
+        <sys_id>8065ea1553539a104d3491e0a0490ea3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 23:17:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=56880f03-c867-4472-adb8-adec751aa77b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</model>
+        <model_id>3b55ea1553539a104d3491e0a0490e35</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_3b55ea1553539a104d3491e0a0490e35</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:50</sys_created_on>
+        <sys_id>8c65ea1553539a104d3491e0a0490e84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 23:17:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=a81a34bc-52fa-4aeb-83f4-941725aeceae</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current_try</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Current Try</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</model>
+        <model_id>3b55ea1553539a104d3491e0a0490e35</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_3b55ea1553539a104d3491e0a0490e35</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:50</sys_created_on>
+        <sys_id>c065ea1553539a104d3491e0a0490e89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 23:17:50</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2c7739a6-3e08-4d23-8b81-9c67c7e0d7c7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>integration_error_message</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Integration Error Message</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Freecurrency Integration">3b55ea1553539a104d3491e0a0490e35</model>
+        <model_id>3b55ea1553539a104d3491e0a0490e35</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_3b55ea1553539a104d3491e0a0490e35</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 01:51:59</sys_created_on>
+        <sys_id>c2a84f5153179a104d3491e0a0490e42</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 01:51:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_3b55ea1553539a104d3491e0a0490e35^sys_idNOT IN7355ea1553539a104d3491e0a0490e46,7f55ea1553539a104d3491e0a0490e4d,c465ea1553539a104d3491e0a0490e55"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3b55ea1553539a104d3491e0a0490e35</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:49</sys_created_on>
+        <sys_id>7355ea1553539a104d3491e0a0490e46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 23:17:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3b55ea1553539a104d3491e0a0490e35</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:50</sys_created_on>
+        <sys_id>7f55ea1553539a104d3491e0a0490e4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 23:17:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3b55ea1553539a104d3491e0a0490e35</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:50</sys_created_on>
+        <sys_id>c465ea1553539a104d3491e0a0490e55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 23:17:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3b55ea1553539a104d3491e0a0490e35"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_3b55ea1553539a104d3491e0a0490e35"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3b55ea1553539a104d3491e0a0490e35"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>348d3115539f5a104d3491e0a0490e50</sys_id>
+        <latest_snapshot>3b55ea1553539a104d3491e0a0490e35</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch4-11-22-2024_12-02-2024_1408.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=348d3115539f5a104d3491e0a0490e50^sys_idNOT INdc65ea1553539a104d3491e0a0490efd"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"dc65ea1553539a104d3491e0a0490efd","name":"plan","plan_signature":null}}</plan>
+        <plan_id>348d3115539f5a104d3491e0a0490e50</plan_id>
+        <snapshot>7af1db9d53179a104d3491e0a0490eb5</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 23:17:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dc65ea1553539a104d3491e0a0490efd</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 02:29:23</sys_updated_on>
+        <trigger display_value="">5065ea1553539a104d3491e0a0490efc</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=348d3115539f5a104d3491e0a0490e50"/>
+</record_update>
