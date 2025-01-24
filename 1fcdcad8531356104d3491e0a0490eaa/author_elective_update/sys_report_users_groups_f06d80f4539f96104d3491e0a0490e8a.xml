@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="DELETE">
+        <group_id/>
+        <report_id display_value="">386d80f4539f96104d3491e0a0490e89</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 22:56:50</sys_created_on>
+        <sys_id>f06d80f4539f96104d3491e0a0490e8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>386d80f4539f96104d3491e0a0490e89</sys_name>
+        <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name>sys_report_users_groups_f06d80f4539f96104d3491e0a0490e8a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:56:50</sys_updated_on>
+        <user_id display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user_id>
+    </sys_report_users_groups>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</application>
+        <file_path/>
+        <instance_id>c2f13af1db014a5437d72a59139619f8</instance_id>
+        <instance_name>dev247250</instance_name>
+        <name>sys_report_users_groups_f06d80f4539f96104d3491e0a0490e8a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups"><sys_report_users_groups action="INSERT_OR_UPDATE"><group_id/><report_id display_value="">386d80f4539f96104d3491e0a0490e89</report_id><sys_class_name>sys_report_users_groups</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-21 22:56:50</sys_created_on><sys_id>f06d80f4539f96104d3491e0a0490e8a</sys_id><sys_mod_count>0</sys_mod_count><sys_name>386d80f4539f96104d3491e0a0490e89</sys_name><sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package><sys_policy/><sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope><sys_update_name>sys_report_users_groups_f06d80f4539f96104d3491e0a0490e8a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-21 22:56:50</sys_updated_on><user_id display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user_id></sys_report_users_groups></record_update>]]></payload>
+        <payload_hash>-1320067444</payload_hash>
+        <record_name>386d80f4539f96104d3491e0a0490e89</record_name>
+        <reverted_from/>
+        <source>bbdd4068539b56104d3491e0a0490ecb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 22:56:50</sys_created_on>
+        <sys_id>096d80f4539f96104d3491e0a0490e8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1948b1535f20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 22:56:50</sys_updated_on>
+        <type>Report Users and Groups</type>
+        <update_guid>f86d80f4279f96105b4b80f894d85e8c</update_guid>
+        <update_guid_history>f86d80f4279f96105b4b80f894d85e8c:-1320067444</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 07:05:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_report_users_groups">sys_report_users_groups</sys_db_object>
+        <sys_id>0a12c903ac5741d0920d8145403de224</sys_id>
+        <sys_metadata>f06d80f4539f96104d3491e0a0490e8a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>386d80f4539f96104d3491e0a0490e89</sys_name>
+        <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_scope_delete display_value="">23feb7802b514b309097806d58664c90</sys_scope_delete>
+        <sys_update_name>sys_report_users_groups_f06d80f4539f96104d3491e0a0490e8a</sys_update_name>
+        <sys_update_version display_value="sys_report_users_groups_f06d80f4539f96104d3491e0a0490e8a">096d80f4539f96104d3491e0a0490e8d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 07:05:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

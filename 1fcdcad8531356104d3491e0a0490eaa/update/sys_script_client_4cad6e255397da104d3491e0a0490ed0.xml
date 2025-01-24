@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>x_1329491_refund_0_refund state flow</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	var ga = new GlideAjax('global.StateFlowAJAX');
+	ga.addParam('sysparm_name', 'getValidStates');
+	ga.addParam('sysparm_state', g_form.getValue('state'));
+	ga.addParam('sysparm_table', 'x_1329491_refund_0_refund');
+	ga.addParam('sysparm_sys_class', 'sf_state_flow');
+	ga.addParam('sysparm_sys_id', g_form.getUniqueValue());
+	ga.getXML(clientScriptAjaxResponse);
+}
+
+function clientScriptAjaxResponse(serverResponse) {
+	//Clear the list and add only valid options
+	g_form.clearOptions('state');
+	var result = serverResponse.responseXML.getElementsByTagName('result');
+	if (result.length > 0) {
+		var value = result[0].getAttribute('values').split(',');
+		var label = result[0].getAttribute('labels').split(',');
+		for (var i = 0; i < value.length; i++)
+			g_form.addOption('state', value[i], label[i]);
+		var mandatory = result[0].getAttribute('mandatory').split(',');
+		var readonly = result[0].getAttribute('readonly').split(',');
+		var visible = result[0].getAttribute('visible').split(',');
+		var notmandatory = result[0].getAttribute('notmandatory').split(',');
+		var notreadonly = result[0].getAttribute('notreadonly').split(',');
+		var notvisible = result[0].getAttribute('notvisible').split(',');
+		for (var i=0; i < mandatory.length; i++)
+			if (mandatory[i])
+				g_form.setMandatory(mandatory[i], true);
+		for (var i=0; i < notmandatory.length; i++)
+			if (notmandatory[i])
+				g_form.setMandatory(notmandatory[i], false);
+		for (var i=0; i < readonly.length; i++)
+			if (readonly[i])
+				g_form.setReadOnly(readonly[i], true);
+		for (var i=0; i < notreadonly.length; i++)
+			if (notreadonly[i])
+				g_form.setReadOnly(notreadonly[i], false);
+		for (var i=0; i < visible.length; i++)
+			if (visible[i])
+				g_form.setDisplay(visible[i], true);
+		for (var i=0; i < notvisible.length; i++)
+			if (notvisible[i])
+				g_form.setDisplay(notvisible[i], false);
+	}
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 18:32:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4cad6e255397da104d3491e0a0490ed0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1329491_refund_0_refund state flow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name>sys_script_client_4cad6e255397da104d3491e0a0490ed0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 18:32:22</sys_updated_on>
+        <table>x_1329491_refund_0_refund</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">dfdf44b8539f96104d3491e0a0490ea4</canvas>
+        <component display_value="Horizontal bar">85855283b7e03010097cb81cde11a91d</component>
+        <component_props>{"selectedElements":[],"configVersion":"23.0.0-ci-SNAPSHOT","chartVariation":"stacked","yAxisPosition":"bottom","yAxisShowGrid":true,"xAxisWrapLabels":false,"xAxisMaxLabelSize":100,"showClosestSeriesOnHover":true,"xAxisTruncationType":"end","yAxisStyle":"clean","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"showDataLabels":false,"dataLabelPosition":"middle","showStackedValues":"none","showOverlappingLabels":false,"colorConfig":{"type":"default"},"yAxisHidden":false,"newReporting":false,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Task SLA 1","sourceType":"table","tableOrViewName":"task_sla","filterQuery":"sla.name=Refund","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV0YXNrX3NsYTE3Mzc3MDAwNTgzNjY=","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"contextMenuActions":[],"headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"dataPassthrough":null,"metrics":[{"dataSource":"dGFibGV0YXNrX3NsYTE3Mzc3MDAwNTgzNjY=","id":"ZEdGaWJHVjBZWE5yWDNOc1lURTNNemMzTURBd05UZ3pOalk9MTczNzcwMDA3NzAyMw==","aggregateFunction":"SUM","axisId":"primary","aggregateField":"business_duration","durationFormat":{"customFormat":false}}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV0YXNrX3NsYTE3Mzc3MDAwNTgzNjY=","groupByField":"task.assignment_group","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":5,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"gzah4z1z","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous","period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"id":"metrics","value":[{"dataSource":"dGFibGV0YXNrX3NsYTE3Mzc3MDAwNTgzNjY=","id":"ZEdGaWJHVjBZWE5yWDNOc1lURTNNemMzTURBd05UZ3pOalk9MTczNzcwMDA3NzAyMw==","aggregateFunction":"SUM","axisId":"primary","aggregateField":"business_duration","durationFormat":{"customFormat":false}}],"noDebounce":true,"propLabel":"Metric label","headerTitle":"TMA - Group Solver"}</component_props>
+        <h>11</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 05:42:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c18dfb19531b9a104d3491e0a0490e83</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_update_name>par_dashboard_widget_c18dfb19531b9a104d3491e0a0490e83</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 12:51:57</sys_updated_on>
+        <visualization/>
+        <w>19</w>
+        <widget_props/>
+        <x>11</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</application>
+        <file_path/>
+        <instance_id>c2f13af1db014a5437d72a59139619f8</instance_id>
+        <instance_name>dev247250</instance_name>
+        <name>par_dashboard_widget_c18dfb19531b9a104d3491e0a0490e83</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">dfdf44b8539f96104d3491e0a0490ea4</canvas><component display_value="Horizontal bar">85855283b7e03010097cb81cde11a91d</component><component_props>{"selectedElements":[],"configVersion":"23.0.0-ci-SNAPSHOT","chartVariation":"stacked","yAxisPosition":"bottom","yAxisShowGrid":true,"xAxisWrapLabels":false,"xAxisMaxLabelSize":100,"showClosestSeriesOnHover":true,"xAxisTruncationType":"end","yAxisStyle":"clean","showLegend":true,"showLegendValue":false,"legendPosition":"bottom","legendHorizontalAlignment":"center","legendExpandToFit":false,"showDataLabels":false,"dataLabelPosition":"middle","showStackedValues":"none","showOverlappingLabels":false,"colorConfig":{"type":"default"},"yAxisHidden":false,"newReporting":false,"additionalGroupByConfig":[],"dataSources":[{"isDatabaseView":false,"allowRealTime":true,"label":"Task SLA 1","sourceType":"table","tableOrViewName":"task_sla","filterQuery":"sla.name=Refund","preferredVisualizations":["d24d53f60350de7a652caf3188a46ed2"],"id":"dGFibGV0YXNrX3NsYTE3Mzc3MDAwNTgzNjY=","dataCategories":["trend","group","simple"]}],"showHeader":true,"showTotalAggregate":false,"showSubAggregate":false,"showFirstGroupAggregate":false,"showSecondGroupAggregate":false,"hideMatrixAggregate":false,"wrapTitle":false,"showHeaderSeparator":false,"contextMenuActions":[],"headingLevel":2,"showBorder":true,"bareBorder":false,"telemetry":null,"showDataPassthrough":false,"showAdditionalGroupBySelector":false,"dataPassthrough":null,"metrics":[{"dataSource":"dGFibGV0YXNrX3NsYTE3Mzc3MDAwNTgzNjY=","id":"ZEdGaWJHVjBZWE5yWDNOc1lURTNNemMzTURBd05UZ3pOalk9MTczNzcwMDA3NzAyMw==","aggregateFunction":"SUM","axisId":"primary","aggregateField":"business_duration","durationFormat":{"customFormat":false}}],"groupBy":[{"groupBy":[{"dataSource":"dGFibGV0YXNrX3NsYTE3Mzc3MDAwNTgzNjY=","groupByField":"task.assignment_group","isRange":false,"isChoice":false,"isPaBucket":false}],"maxNumberOfGroups":5,"numberOfGroupsBasedOn":"NO_OF_GROUP_BASED_ON_PER_METRIC","showOthers":false,"disableRanges":false}],"sortBy":"value","sortByOrder":"desc","trendBy":null,"showChange":false,"showChangePercentage":false,"showTarget":false,"showForecast":false,"showForecastRange":false,"showTrend":false,"showConfidenceBand":false,"showGapPercentage":false,"showSparkline":false,"showMetricLabel":false,"showThreshold":false,"showComment":false,"followFilters":true,"showFilterIcon":true,"enableRealTimeUpdate":false,"enableDrilldown":true,"enableClickAndStay":false,"showDataTable":false,"enableCustomEmptyState":false,"componentId":"gzah4z1z","emptyStateIllustration":"no-data","emptyStateHeading":"No data available.","emptyStateContent":"There are no scores available for the selected criteria. Contact your admin for more info.","emptyStateAlignment":"vertical-centered","refreshFrequency":null,"hideDevSettings":false,"configPropModifiers":{},"filterConfigurations":"@state.parFilters","showMaximumRange":false,"allowChangeDateRange":false,"showDateRangeByDefault":false,"applyDateRange":false,"numberOfPeriods":3,"showAbsolutePeriod":false,"scoreType":null,"showChangeFrom":"previous","period":"M","useDataCache":false,"cacheExpirationTime":0,"showCacheTime":true,"dateFormat":"default","showRefresh":true,"id":"metrics","value":[{"dataSource":"dGFibGV0YXNrX3NsYTE3Mzc3MDAwNTgzNjY=","id":"ZEdGaWJHVjBZWE5yWDNOc1lURTNNemMzTURBd05UZ3pOalk9MTczNzcwMDA3NzAyMw==","aggregateFunction":"SUM","axisId":"primary","aggregateField":"business_duration","durationFormat":{"customFormat":false}}],"noDebounce":true,"propLabel":"Metric label","headerTitle":"TMA - Group Solver"}</component_props><h>11</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-24 05:42:56</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c18dfb19531b9a104d3491e0a0490e83</sys_id><sys_mod_count>3</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package><sys_policy/><sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope><sys_update_name>par_dashboard_widget_c18dfb19531b9a104d3491e0a0490e83</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-24 12:51:57</sys_updated_on><visualization/><w>19</w><widget_props/><x>11</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>-1036367193</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>bbdd4068539b56104d3491e0a0490ecb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 12:51:57</sys_created_on>
+        <sys_id>a1bfdd615313da104d3491e0a0490e26</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194985e7e560000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 12:51:57</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>29bfdd61c813da104c52ffa47508b825</update_guid>
+        <update_guid_history>29bfdd61c813da104c52ffa47508b825:-1036367193,d4dbc4a9bc5b9a10850db3fadf5ad201:-1661651830,bb4040e91e1b9a10c0893c8799905b3f:1188953825,818dfb19021b9a1026a6932b65669784:714807069</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">2057ede95313da104d3491e0a0490eac</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 13:25:12</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>8247daed4b144350bbdc463dd6048900</sys_id>
+        <sys_metadata>c18dfb19531b9a104d3491e0a0490e83</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Refund - Andrés" source="x_1329491_refund_0">1fcdcad8531356104d3491e0a0490eaa</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Refund - Andrés">1fcdcad8531356104d3491e0a0490eaa</sys_scope>
+        <sys_scope_delete display_value="">23feb7802b514b309097806d58664c90</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_c18dfb19531b9a104d3491e0a0490e83</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_c18dfb19531b9a104d3491e0a0490e83">a1bfdd615313da104d3491e0a0490e26</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 13:25:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
